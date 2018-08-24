@@ -1,0 +1,72 @@
+.homepage {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 90px minmax(200px, auto);
+    grid-gap: 20px;
+};
+
+.parallax {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.homepage_electric {
+    position: absolute;
+    top: 335px;
+    left: 620px;
+}
+
+.homepage_black {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.homepage_crimson {
+    position: absolute;
+    top: 5px;
+    left: 11px;
+}
+
+.homepage_mauve {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+
+.homepage_forest {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.homepage_spicy {
+    position: absolute;
+    top: 2px;
+    left: 7px;
+}
+
+.homepage_mud {
+    position: absolute;
+    top: 12px;
+    left: 19px;
+}
+
+.homepage_mint {
+    position: absolute;
+    bottom: 3px;
+    left: 2px;
+}
+
+.homepage_eggshell {
+    position: absolute;
+    bottom: 9px;
+    left: 11px;
+}
+
+.homepage > div:nth-child(1) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
