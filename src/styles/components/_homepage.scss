@@ -5,16 +5,12 @@
     grid-gap: 20px;
 };
 
-.parallax {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
 
 .homepage_electric {
     position: absolute;
     top: 335px;
     left: 620px;
+    cursor: pointer;
 }
 
 .homepage_black {
@@ -70,3 +66,151 @@
     grid-row: 3 / 4;
 }
 
+.homepage_peachb {
+    position: absolute;
+    top: 550px;
+    left: 470px;
+}
+
+.homepage_eggshellb {
+    position: absolute;
+    top: 553px;
+    left: 473px;
+}
+
+.homepage_crimsonb {
+    position: absolute;
+    top: 557px;
+    left: 475px;
+}
+
+.homepage_mintb {
+    position: absolute;
+    top: 563px;
+    left: 479px;
+}
+
+.homepage_mustardb {
+    position: absolute;
+    top: 567px;
+    left: 482px;
+}
+
+.homepage_electricb {
+    position: absolute;
+    top: 572px;
+    left: 485px;
+}
+
+
+.homepage_blacka {
+    position: absolute;
+    top: 370px;
+    left: 550px;
+}
+
+.homepage_olivea {
+    position: absolute;
+    top: 371px;
+    left: 551px;
+}
+
+.homepage_spicya {
+    position: absolute;
+    top: 373px;
+    left: 554px;
+}
+
+.homepage_minta {
+    position: absolute;
+    top: 374px;
+    left: 556px;
+}
+
+.homepage_mustarda {
+    position: absolute;
+    top: 376px;
+    left: 559px;
+}
+
+.homepage_peacha {
+    position: absolute;
+    top: 378px;
+    left: 562px;
+}
+
+.homepage > div:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.homepage_forestc {
+    position: absolute;
+    top: 661px;
+    left: 990px;
+}
+
+.homepage_eggshellc {
+    position: absolute;
+    top: 664px;
+    left: 992px;
+}
+
+.homepage_spicyc {
+    position: absolute;
+    top: 667px;
+    left: 995px;
+}
+
+.homepage_mustardc {
+    position: absolute;
+    top: 670px;
+    left: 997px;
+}
+
+.homepage_eggshellc1 {
+    position: absolute;
+    top: 678px;
+    left: 1003px;
+}
+
+.menupath {
+    position: absolute;
+    top: 180px;
+    left: 1030px;
+}
+
+.path {
+    position: absolute;
+    top: 125px;
+    left: 1030px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 2s linear forwards;
+  }
+
+.port {
+    padding-left: 135px;
+    animation: fade-in-right ease 0.8s forwards;
+}
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(30px);
+    }
+  }
+
+  
+  
