@@ -25,6 +25,7 @@
     "react-dom": "16.0.0",
     "react-modal": "2.2.2",
     "react-parallax-mousemove": "^1.1.0",
+    "react-scroll": "^1.7.10",
     "react-svg": "^5.0.22",
     "react-tilt": "^0.1.4",
     "sass-loader": "6.0.6",

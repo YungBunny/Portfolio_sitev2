@@ -10,8 +10,16 @@ import Path3 from '../images/mainblob/Path_3.svg';
 import Path2 from '../images/mainblob/Path_2.svg';
 import Path1 from '../images/mainblob/Path_1.svg';
 
-const MainBlob = () => (
+export default class MainBlob extends React.Component  {
 
+    render() {
+        const style = {
+            infoLayerStyle: {
+                position: 'relative',
+                marginTop: '-60px'
+            }
+        }
+    return (
         <div className='homepage'>
             <ParallaxMousemove >
                 <div className='homepage_electric'>
@@ -124,7 +132,6 @@ const MainBlob = () => (
                 </div>
             </ParallaxMousemove>
         </div>
-    )
-                                                
-
-export default MainBlob;
+        )
+    } 
+}                  
