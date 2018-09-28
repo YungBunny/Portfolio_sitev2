@@ -9,8 +9,9 @@ import Path4 from '../images/mainblob/Path_4.svg';
 import Path3 from '../images/mainblob/Path_3.svg';
 import Path2 from '../images/mainblob/Path_2.svg';
 import Path1 from '../images/mainblob/Path_1.svg';
+import FUMANITY from '../images/FUMANITY.svg';
 
-export default class MainBlob extends React.Component  {
+export default class MainBlob extends React.Component {
 
     render() {
         const style = {
@@ -19,15 +20,14 @@ export default class MainBlob extends React.Component  {
                 marginTop: '-60px'
             }
         }
-    return (
-        <div className='homepage'>
-            <ParallaxMousemove >
+        return (
+            <div>
                 <div className='homepage_electric'>
                     <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
                         xFactor: 0.11,
                         yFactor: 0.11,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 30
                         }
                     }}>
@@ -38,7 +38,7 @@ export default class MainBlob extends React.Component  {
                             xFactor: 0.1,
                             yFactor: 0.1,
                             springSettings: {
-                                stiffness: 100,
+                                stiffness: 200,
                                 damping: 35
                             }
                         }}>
@@ -49,7 +49,7 @@ export default class MainBlob extends React.Component  {
                                 xFactor: 0.09,
                                 yFactor: 0.09,
                                 springSettings: {
-                                    stiffness: 100,
+                                    stiffness: 200,
                                     damping: 40
                                 }
                             }}>
@@ -60,7 +60,7 @@ export default class MainBlob extends React.Component  {
                                     xFactor: 0.08,
                                     yFactor: 0.08,
                                     springSettings: {
-                                        stiffness: 100,
+                                        stiffness: 200,
                                         damping: 45
                                     }
                                 }}>
@@ -71,7 +71,7 @@ export default class MainBlob extends React.Component  {
                                         xFactor: 0.07,
                                         yFactor: 0.07,
                                         springSettings: {
-                                            stiffness: 100,
+                                            stiffness: 200,
                                             damping: 50
                                         }
                                     }}>
@@ -82,7 +82,7 @@ export default class MainBlob extends React.Component  {
                                             xFactor: 0.06,
                                             yFactor: 0.06,
                                             springSettings: {
-                                                stiffness: 100,
+                                                stiffness: 200,
                                                 damping: 55
                                             }
                                         }}>
@@ -93,7 +93,7 @@ export default class MainBlob extends React.Component  {
                                                 xFactor: 0.05,
                                                 yFactor: 0.05,
                                                 springSettings: {
-                                                    stiffness: 100,
+                                                    stiffness: 200,
                                                     damping: 60
                                                 }
                                             }}>
@@ -104,7 +104,7 @@ export default class MainBlob extends React.Component  {
                                                     xFactor: 0.04,
                                                     yFactor: 0.04,
                                                     springSettings: {
-                                                        stiffness: 100,
+                                                        stiffness: 200,
                                                         damping: 65
                                                     }
                                                 }}>
@@ -115,13 +115,26 @@ export default class MainBlob extends React.Component  {
                                                         xFactor: 0.03,
                                                         yFactor: 0.03,
                                                         springSettings: {
-                                                            stiffness: 100,
+                                                            stiffness: 200,
                                                             damping: 70
                                                         }
                                                     }}>
                                                         <Path1 />
                                                     </ParallaxMousemove.Layer>
+                                                    
                                                 </div>
+                                                <div className='homepage_fumanity'>
+                                                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                                                        xFactor: 0.03,
+                                                        yFactor: 0.03,
+                                                        springSettings: {
+                                                            stiffness: 200,
+                                                            damping: 70
+                                                        }
+                                                    }}>
+                                                        <FUMANITY />
+                                                    </ParallaxMousemove.Layer>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -130,8 +143,7 @@ export default class MainBlob extends React.Component  {
                         </div>
                     </div>
                 </div>
-            </ParallaxMousemove>
-        </div>
+            </div>
         )
-    } 
+    }
 }                  

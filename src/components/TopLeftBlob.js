@@ -24,7 +24,7 @@ export default class TopLeftBlob extends React.Component {
                         xFactor: 0.08,
                         yFactor: 0.08,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 45
                         }
                     }}>
@@ -36,7 +36,7 @@ export default class TopLeftBlob extends React.Component {
                         xFactor: 0.07,
                         yFactor: 0.07,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 50
                         }
                     }}>
@@ -48,7 +48,7 @@ export default class TopLeftBlob extends React.Component {
                         xFactor: 0.06,
                         yFactor: 0.06,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 55
                         }
                     }}>
@@ -60,7 +60,7 @@ export default class TopLeftBlob extends React.Component {
                         xFactor: 0.05,
                         yFactor: 0.05,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 60
                         }
                     }}>
@@ -72,7 +72,7 @@ export default class TopLeftBlob extends React.Component {
                         xFactor: 0.04,
                         yFactor: 0.04,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 65
                         }
                     }}>
@@ -84,7 +84,7 @@ export default class TopLeftBlob extends React.Component {
                         xFactor: 0.03,
                         yFactor: 0.03,
                         springSettings: {
-                            stiffness: 100,
+                            stiffness: 200,
                             damping: 70
                         }
                     }}>
