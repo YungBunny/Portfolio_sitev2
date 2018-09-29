@@ -10,6 +10,7 @@
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "aphrodite": "^2.2.3",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
@@ -21,15 +22,20 @@
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
     "normalize.css": "7.0.0",
+    "raw-loader": "^0.5.1",
     "react": "16.0.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "16.0.0",
     "react-modal": "2.2.2",
     "react-parallax-mousemove": "^1.1.0",
     "react-scroll": "^1.7.10",
+    "react-scroll-to-component": "^1.0.2",
     "react-svg": "^5.0.22",
+    "react-svg-inline": "^2.1.1",
     "react-tilt": "^0.1.4",
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
+    "svg-url-loader": "^2.3.2",
     "tilt.js": "^1.2.1",
     "validator": "8.0.0",
     "webpack": "3.1.0",
@@ -38,6 +44,7 @@
   "devDependencies": {
     "react-parallax-hover": "^1.0.4",
     "react-svg-loader": "^2.1.0",
-    "svg-inline-loader": "^0.8.0"
+    "svg-inline-loader": "^0.8.0",
+    "url-loader": "^1.1.1"
   }
 }

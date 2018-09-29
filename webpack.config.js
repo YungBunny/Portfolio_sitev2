@@ -33,6 +33,7 @@ module.exports = { // expose something to another file
                     jsx: true // true outputs JSX tags
                     }
                 }
+               
             ]
         }]
     },

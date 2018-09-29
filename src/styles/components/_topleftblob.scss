@@ -2,34 +2,58 @@
     position: absolute;
     top: 370px;
     left: 550px;
+    animation: dash 16s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_olivea {
     position: absolute;
     top: 371px;
     left: 551px;
+    animation: dash 16s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_spicya {
     position: absolute;
     top: 373px;
     left: 554px;
+    animation: dash 16s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_minta {
     position: absolute;
     top: 374px;
     left: 556px;
+    animation: dash 16s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_mustarda {
     position: absolute;
     top: 376px;
     left: 559px;
+    animation: dash 16s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_peacha {
     position: absolute;
     top: 378px;
     left: 562px;
+    animation: dash 16s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

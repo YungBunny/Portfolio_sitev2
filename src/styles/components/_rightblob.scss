@@ -2,28 +2,49 @@
     position: absolute;
     top: 661px;
     left: 990px;
+    animation: dash 12s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_eggshellc {
     position: absolute;
     top: 664px;
     left: 992px;
+    animation: dash 12s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_spicyc {
     position: absolute;
     top: 667px;
     left: 995px;
+    animation: dash 12s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_mustardc {
     position: absolute;
     top: 670px;
     left: 997px;
+    animation: dash 12s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_eggshellc1 {
     position: absolute;
     top: 678px;
     left: 1003px;
+    animation: dash 12s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

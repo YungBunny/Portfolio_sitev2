@@ -2,34 +2,58 @@
     position: absolute;
     top: 550px;
     left: 470px;
+    animation: dash 6s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_eggshellb {
     position: absolute;
     top: 553px;
     left: 473px;
+    animation: dash 6s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_crimsonb {
     position: absolute;
     top: 557px;
     left: 475px;
+    animation: dash 6s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_mintb {
     position: absolute;
     top: 563px;
     left: 479px;
+    animation: dash 6s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_mustardb {
     position: absolute;
     top: 567px;
     left: 482px;
+    animation: dash 6s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 .homepage_electricb {
     position: absolute;
     top: 572px;
     left: 485px;
+    animation: dash 6s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

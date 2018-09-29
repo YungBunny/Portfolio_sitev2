@@ -123,18 +123,7 @@ export default class MainBlob extends React.Component {
                                                     </ParallaxMousemove.Layer>
                                                     
                                                 </div>
-                                                <div className='homepage_fumanity'>
-                                                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                                        xFactor: 0.03,
-                                                        yFactor: 0.03,
-                                                        springSettings: {
-                                                            stiffness: 200,
-                                                            damping: 70
-                                                        }
-                                                    }}>
-                                                        <FUMANITY />
-                                                    </ParallaxMousemove.Layer>
-                                            </div>
+                                     
                                             </div>
                                         </div>
                                     </div>

@@ -3,52 +3,103 @@
     top: 335px;
     left: 620px;
     cursor: pointer;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_black {
     position: absolute;
     top: 6px;
     left: 10px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_crimson {
     position: absolute;
     top: 5px;
     left: 11px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_mauve {
     position: absolute;
     top: 4px;
     left: 8px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_forest {
     position: absolute;
     top: 3px;
     left: 4px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_spicy {
     position: absolute;
     top: 2px;
     left: 7px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_mud {
     position: absolute;
     top: 12px;
     left: 19px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_mint {
     position: absolute;
     bottom: 3px;
     left: 2px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
 }
 
 .homepage_eggshell {
     position: absolute;
     bottom: 9px;
     left: 11px;
+    animation: dash 3s linear forwards;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;  
 }
+
+.homepage_fumanity {
+    position: absolute;
+    bottom: 20px;
+    left: 32px;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 0;  
+        opacity: 0;
+        fill-opacity:0 ;
+      }
+    50%{
+        stroke-dashoffset: 0;  
+      opacity: 0;
+      fill-opacity: 0;
+    }
+    100%{
+      
+      opacity: 1;
+      fill-opacity: 1;
+    }
+  }

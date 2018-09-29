@@ -10,6 +10,8 @@ import PortfolioPage from './PortfolioPage';
 import MenuPath from '../images/menupath.svg';
 import Portfolio from '../images/Portfolio.svg';
 import About from '../images/About.svg';
+import ChanelFu from '../images/chanelfu.svg';
+import HomepageDesc from '../images/homepageDesc.svg';
 import Backgroundgrid from '../images/background_grid.svg'
 import Verticalgrid from '../images/vertical_grid.svg'
 import Horizontalgrid from '../images/horizontal_grid.svg'
@@ -39,34 +41,20 @@ export default class HomePage extends React.Component {
 
         return (
             <div>
-                <div className='vertical_grid'>
-                    <Horizontalgrid />
-                </div>
-                <div className='horizontal_grid'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.01,
-                        yFactor: 0.01,
-                        springSettings: {
-                            stiffness: 400,
-                            damping: 70
-                        }
-                    }}>
-
-                        <Verticalgrid />
-
-
-                    </ParallaxMousemove.Layer>
-                </div>
-
                 <div className='homepage'>
-                    <ParallaxMousemove>
-                        <div onClick={this.toggleMenupath}>
-                            <MainBlob />
-                        </div>
-                        <BottomLeftBlob />
-                        <TopLeftBlob />
-                        <RightBlob />
-                    </ParallaxMousemove>
+                    <div>
+                        <ChanelFu />
+                    </div>
+                    <div>
+                        <ParallaxMousemove>
+                            <div onClick={this.toggleMenupath}>
+                                <MainBlob />
+                            </div>
+                            <BottomLeftBlob />
+                            <TopLeftBlob />
+                            <RightBlob />
+                        </ParallaxMousemove>
+                    </div>
                     <div>
                         {isMenu ? (
                             <div className='path'>
@@ -85,7 +73,11 @@ export default class HomePage extends React.Component {
                                 <div></div>
                             )}
                     </div>
+                    <div>
+                        <HomepageDesc />
+                    </div>
                 </div>
+
                 <div ref={(section) => { this.PortfolioPage = section; }}><PortfolioPage /></div>
                 <div></div>
             </div>

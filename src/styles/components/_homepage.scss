@@ -1,18 +1,58 @@
 .homepage {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-auto-rows: 90px minmax(200px, auto);
+    grid-auto-rows: 290px minmax(200px, auto);
     grid-gap: 20px;
 };
 
+.portpage {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 290px minmax(200px, auto);
+    grid-gap: 20px;
+    background: $eggshell;
+}
+
+.portpage > div:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  animation: fade-in-right ease 4s forwards;
+}
+
+.portpage > div:nth-child(6) {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.block {
+    background: black;
+    border-radius: 15px;
+}
+
 .homepage > div:nth-child(1) {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: flex-end;
+}
+
+.homepage > div:nth-child(4) {
+  grid-column: 4 / 4;
+  grid-row: 3 / 3;
+  display: flex;
+  align-items: flex-end;
 }
 
 .homepage > div:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+  grid-column: 2/span 3;
+  grid-row: 2/span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage > div:nth-child(2) div:nth-child(2) {
+  display: flex;
+  justify-content: center;
 }
 
 .path {
@@ -26,7 +66,8 @@
 
 .port {
     padding-left: 135px;
-    animation: fade-in-right ease 0.8s forwards;
+    animation: fade-in-right ease 3s forwards;
+    cursor: pointer;
 }
 
   @keyframes dash {
@@ -46,5 +87,52 @@
     }
   }
 
+  .agent-1, .agent-3 {
+    opacity: 0;
+    animation: fade-in-right ease 0.4s forwards;
+  }
   
+  .agent-2 {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    animation-delay: 0.4s;
+  }
   
+  .agent-3 {
+    animation-delay: 0.8s;
+  }
+
+  @keyframes fade-in-right2 {
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes grow-left {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .vertical_grid {
+    position: absolute;
+    padding-right: 200px;
+  }
+  .vertical_grid svg {
+    width: 890px;
+    height: 1280px;
+  }
+
+  .horizontal_grid {
+    position: absolute;
+  
+  }
