@@ -1,83 +1,76 @@
+.main_blob_2 {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+    grid-gap: 2px;
+}
+
+.main_blob_2 div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    grid-column: 3 / 8;
+    grid-row: 1 / 5;
+}
+
+.main_blob_2 div:nth-child(2) {
+    grid-column: 3 / 8;
+    grid-row: 1 / 5;
+}
+
+.main_blob_2 div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8), div:nth-child(9) {
+    grid-column: 3 / 8;
+    grid-row: 1 / 5;
+}
+
 .homepage_electric {
-    position: absolute;
-    top: 335px;
-    left: 620px;
     cursor: pointer;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    
 }
 
 .homepage_black {
-    position: absolute;
-    top: 6px;
-    left: 10px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .homepage_crimson {
-    position: absolute;
-    top: 5px;
-    left: 11px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 9px;
+    margin-left: 11px;
 }
 
 .homepage_mauve {
-    position: absolute;
-    top: 4px;
-    left: 8px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 13px;
+    margin-left: 13px;
 }
 
 .homepage_forest {
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 17px;
+    margin-left: 13px;
 }
 
 .homepage_spicy {
-    position: absolute;
-    top: 2px;
-    left: 7px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 21px;
+    margin-left: 13px;
 }
 
 .homepage_mud {
-    position: absolute;
-    top: 12px;
-    left: 19px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 35px;
+    margin-left: 25px;
 }
 
 .homepage_mint {
-    position: absolute;
-    bottom: 3px;
-    left: 2px;
-    animation: dash 3s linear forwards;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    margin-top: 37px;
+    margin-left: 25px;
 }
 
 .homepage_eggshell {
-    position: absolute;
-    bottom: 9px;
-    left: 11px;
-    animation: dash 3s linear forwards;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+.homepage_electric, .homepage_black, .homepage_crimson, .homepage_mauve, .homepage_forest, .homepage_spicy, .homepage_mud, .homepage_mint, .homepage_eggshell {
     stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;  
+    stroke-dashoffset: 1500; 
+    animation: dash 3s linear forwards;
 }
 
 .homepage_fumanity {

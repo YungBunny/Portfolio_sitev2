@@ -45,7 +45,7 @@ export default class HomePage extends React.Component {
                     <div>
                         <ChanelFu />
                     </div>
-                    <div>
+                    <div className='main_blob'>
                         <ParallaxMousemove>
                             <div onClick={this.toggleMenupath}>
                                 <MainBlob />
@@ -76,6 +76,7 @@ export default class HomePage extends React.Component {
                     <div>
                         <HomepageDesc />
                     </div>
+                    <div></div>
                 </div>
 
                 <div ref={(section) => { this.PortfolioPage = section; }}><PortfolioPage /></div>

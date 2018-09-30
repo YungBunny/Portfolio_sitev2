@@ -21,7 +21,7 @@ export default class MainBlob extends React.Component {
             }
         }
         return (
-            <div>
+            <div className='main_blob_2'>
                 <div className='homepage_electric'>
                     <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
                         xFactor: 0.11,
@@ -33,104 +33,102 @@ export default class MainBlob extends React.Component {
                     }}>
                         <Path9 />
                     </ParallaxMousemove.Layer>
-                    <div className='homepage_black'>
-                        <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                            xFactor: 0.1,
-                            yFactor: 0.1,
-                            springSettings: {
-                                stiffness: 200,
-                                damping: 35
-                            }
-                        }}>
-                            <Path8 />
-                        </ParallaxMousemove.Layer>
-                        <div className='homepage_crimson'>
-                            <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                xFactor: 0.09,
-                                yFactor: 0.09,
-                                springSettings: {
-                                    stiffness: 200,
-                                    damping: 40
-                                }
-                            }}>
-                                <Path7 />
-                            </ParallaxMousemove.Layer>
-                            <div className='homepage_mauve'>
-                                <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                    xFactor: 0.08,
-                                    yFactor: 0.08,
-                                    springSettings: {
-                                        stiffness: 200,
-                                        damping: 45
-                                    }
-                                }}>
-                                    <Path6 />
-                                </ParallaxMousemove.Layer>
-                                <div className='homepage_forest'>
-                                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                        xFactor: 0.07,
-                                        yFactor: 0.07,
-                                        springSettings: {
-                                            stiffness: 200,
-                                            damping: 50
-                                        }
-                                    }}>
-                                        <Path5 />
-                                    </ParallaxMousemove.Layer>
-                                    <div className='homepage_spicy'>
-                                        <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                            xFactor: 0.06,
-                                            yFactor: 0.06,
-                                            springSettings: {
-                                                stiffness: 200,
-                                                damping: 55
-                                            }
-                                        }}>
-                                            <Path4 />
-                                        </ParallaxMousemove.Layer>
-                                        <div className='homepage_mud'>
-                                            <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                                xFactor: 0.05,
-                                                yFactor: 0.05,
-                                                springSettings: {
-                                                    stiffness: 200,
-                                                    damping: 60
-                                                }
-                                            }}>
-                                                <Path3 />
-                                            </ParallaxMousemove.Layer>
-                                            <div className='homepage_mint'>
-                                                <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                                    xFactor: 0.04,
-                                                    yFactor: 0.04,
-                                                    springSettings: {
-                                                        stiffness: 200,
-                                                        damping: 65
-                                                    }
-                                                }}>
-                                                    <Path2 />
-                                                </ParallaxMousemove.Layer>
-                                                <div className='homepage_eggshell'>
-                                                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                                                        xFactor: 0.03,
-                                                        yFactor: 0.03,
-                                                        springSettings: {
-                                                            stiffness: 200,
-                                                            damping: 70
-                                                        }
-                                                    }}>
-                                                        <Path1 />
-                                                    </ParallaxMousemove.Layer>
-                                                    
-                                                </div>
-                                     
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div className='homepage_black'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.1,
+                        yFactor: 0.1,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 35
+                        }
+                    }}>
+                        <Path8 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_crimson'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.09,
+                        yFactor: 0.09,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 40
+                        }
+                    }}>
+                        <Path7 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_mauve'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.08,
+                        yFactor: 0.08,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 45
+                        }
+                    }}>
+                        <Path6 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_forest'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.07,
+                        yFactor: 0.07,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 50
+                        }
+                    }}>
+                        <Path5 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_spicy'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.06,
+                        yFactor: 0.06,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 55
+                        }
+                    }}>
+                        <Path4 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_mud'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.05,
+                        yFactor: 0.05,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 60
+                        }
+                    }}>
+                        <Path3 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_mint'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.04,
+                        yFactor: 0.04,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 65
+                        }
+                    }}>
+                        <Path2 />
+                    </ParallaxMousemove.Layer>
+                </div>
+                <div className='homepage_eggshell'>
+                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
+                        xFactor: 0.03,
+                        yFactor: 0.03,
+                        springSettings: {
+                            stiffness: 200,
+                            damping: 70
+                        }
+                    }}>
+                        <Path1 />
+                    </ParallaxMousemove.Layer>
                 </div>
             </div>
         )
