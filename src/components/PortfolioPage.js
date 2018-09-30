@@ -6,7 +6,7 @@ const PortfolioPage = () => (
 
   <div>
 
-    <div className='portpage'>
+    <div>
       <ScrollAnimation animateIn='agent-1'>
         <h1>
           Hey

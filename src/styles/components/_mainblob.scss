@@ -16,6 +16,8 @@
 }
 
 .main_blob_2 div:nth-child(2) {
+    display: flex;
+    justify-content: center;
     grid-column: 3 / 8;
     grid-row: 1 / 5;
     stroke-dasharray: 1500;
@@ -24,6 +26,8 @@
 }
 
 .main_blob_2 div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8), div:nth-child(9) {
+    display: flex;
+    justify-content: center;
     grid-column: 3 / 8;
     grid-row: 1 / 5;
     stroke-dasharray: 1500;
@@ -113,3 +117,16 @@
       fill-opacity: 1;
     }
   }
+
+  @media all and (max-width: 575px) {
+
+  .main_blob_2  {
+    width:100%;
+    display: grid;
+    grid-gap: 2px;
+  }
+//   .main_blob_2 div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8), div:nth-child(9) {
+//     grid-column: 2/span 1;
+//     grid-row: 2/span 3;
+//     }
+}
