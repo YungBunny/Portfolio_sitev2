@@ -17,7 +17,7 @@ export default class BottomLeftBlob extends React.Component {
             }
         }
         return (
-            <div>
+            <div className='bottom_left_blob'>
                 <div className='homepage_peachb'>
                     <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
                         xFactor: 0.08,

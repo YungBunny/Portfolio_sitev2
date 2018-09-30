@@ -50,9 +50,7 @@ export default class HomePage extends React.Component {
                             <div onClick={this.toggleMenupath}>
                                 <MainBlob />
                             </div>
-                            <BottomLeftBlob />
-                            <TopLeftBlob />
-                            <RightBlob />
+                            
                         </ParallaxMousemove>
                     </div>
                     <div>

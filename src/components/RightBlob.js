@@ -11,12 +11,11 @@ export default class RightBlob extends React.Component {
     render() {
         const style = {
             infoLayerStyle: {
-                position: 'relative',
-                marginTop: '-60px'
+                position: 'relative'
             }
         }
         return (
-            <div>
+            <div className='right_blob'>
                 <div className='homepage_forestc'>
                     <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
                         xFactor: 0.07,

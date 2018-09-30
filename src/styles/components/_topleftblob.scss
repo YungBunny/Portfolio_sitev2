@@ -1,55 +1,36 @@
-.homepage_blacka {
-    position: absolute;
-    top: 370px;
-    left: 550px;
+.top_left_blob div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6) {
     animation: dash 16s linear forwards;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
+}
+
+.homepage_blacka {
+    margin-top: 30px;
 }
 
 .homepage_olivea {
-    position: absolute;
-    top: 371px;
-    left: 551px;
-    animation: dash 16s linear forwards;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    margin-left: -55px;
+    margin-top: 30px;
 }
 
 .homepage_spicya {
-    position: absolute;
-    top: 373px;
-    left: 554px;
-    animation: dash 16s linear forwards;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    margin-left: -50px;
+    margin-top: 31px;
 }
 
 .homepage_minta {
-    position: absolute;
-    top: 374px;
-    left: 556px;
-    animation: dash 16s linear forwards;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    margin-left: -45px;
+    margin-top: 32px;
 }
 
 .homepage_mustarda {
-    position: absolute;
-    top: 376px;
-    left: 559px;
-    animation: dash 16s linear forwards;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    margin-left: -40px;
+    margin-top: 33px;
 }
 
 .homepage_peacha {
-    position: absolute;
-    top: 378px;
-    left: 562px;
-    animation: dash 16s linear forwards;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    margin-left: -35px;
+    margin-top: 35px;
 }
 
 @keyframes dash {

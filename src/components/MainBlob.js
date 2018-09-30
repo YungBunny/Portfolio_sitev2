@@ -9,6 +9,9 @@ import Path4 from '../images/mainblob/Path_4.svg';
 import Path3 from '../images/mainblob/Path_3.svg';
 import Path2 from '../images/mainblob/Path_2.svg';
 import Path1 from '../images/mainblob/Path_1.svg';
+import TopLeftBlob from './TopLeftBlob';
+import BottomLeftBlob from './BottomLeftBlob';
+import RightBlob from './RightBlob';
 import FUMANITY from '../images/FUMANITY.svg';
 
 export default class MainBlob extends React.Component {
@@ -129,6 +132,15 @@ export default class MainBlob extends React.Component {
                     }}>
                         <Path1 />
                     </ParallaxMousemove.Layer>
+                </div>
+                <div>
+                    <TopLeftBlob />
+                </div>
+                <div>
+                    <BottomLeftBlob />
+                </div>
+                <div>
+                    <RightBlob />
                 </div>
             </div>
         )
