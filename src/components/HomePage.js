@@ -4,6 +4,7 @@ import scrollToComponent from 'react-scroll-to-component';
 import "animate.css/animate.min.css";
 import MainBlob from './MainBlob';
 import PortfolioPage from './PortfolioPage';
+import StickyNav from './StickyNav';
 import ChanelFu from '../images/chanelfu.svg';
 import HomepageDesc from '../images/homepageDesc.svg';
 
