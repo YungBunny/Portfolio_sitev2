@@ -6,33 +6,39 @@
 }
 
 .main_blob_2 div:nth-child(1) {
+    fill-opacity: 0;
     display: flex;
     justify-content: center;
     grid-column: 3 / 8;
     grid-row: 1 / 5;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500; 
-    animation: dash 3s linear forwards;
+    animation: dash 3s linear forwards, FillIn 0.5s ease-in forwards;
+    animation-delay: 0s, 2.5s;
 }
 
 .main_blob_2 div:nth-child(2) {
+    fill-opacity: 0;
     display: flex;
     justify-content: center;
     grid-column: 3 / 8;
     grid-row: 1 / 5;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500; 
-    animation: dash 3s linear forwards;
+    animation: dash 3s linear forwards, FillIn 0.5s ease-in forwards;
+    animation-delay: 0s, 2.5s;
 }
 
 .main_blob_2 div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8), div:nth-child(9) {
+    fill-opacity: 0;
     display: flex;
     justify-content: center;
     grid-column: 3 / 8;
     grid-row: 1 / 5;
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500; 
-    animation: dash 3s linear forwards;
+    animation: dash 3s linear forwards, FillIn 0.5s ease-in forwards;
+    animation-delay: 0s, 2.5s;
 }
 
 .main_blob_2 div:nth-child(10) {
@@ -101,20 +107,21 @@
 }
 
 @keyframes dash {
-    0% {
-        stroke-dashoffset: 0;  
-        opacity: 0;
-        fill-opacity:0 ;
-      }
-    50%{
-        stroke-dashoffset: 0;  
-      opacity: 0;
-      fill-opacity: 0;
+    from { 
+        fill-opacity: 0; 
     }
-    100%{
-      
-      opacity: 1;
-      fill-opacity: 1;
+    to {
+        stroke-dashoffset: 0;  
+        fill-opacity: 0; 
+    }
+  }
+
+  @keyframes FillIn {
+    from { 
+        fill-opacity: 0; 
+    }
+    to { 
+        fill-opacity: 1; 
     }
   }
 
