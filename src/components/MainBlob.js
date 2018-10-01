@@ -24,7 +24,7 @@ export default class MainBlob extends React.Component {
             }
         }
         return (
-            <div className='main_blob_2'>
+            <div className='main_blob2'>
                 <div className='homepage_electric'>
                     <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
                         xFactor: 0.11,

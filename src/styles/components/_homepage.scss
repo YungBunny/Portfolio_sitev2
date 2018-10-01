@@ -15,16 +15,16 @@
 
 .main_blob {
   grid-column: 2/span 3;
-  grid-row: 2/span 2;
+  grid-row: 2/span 1;
 }
 
 .homepage > div:nth-child(3) {
   grid-column: 4 / 4;
   grid-row: 3 / 3;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 80%;
-  animation: fade-in-bottom ease 4s forwards;
+  //animation: fade-in-bottom ease 4s forwards;
 }
 
 .homepage > div:nth-child(4) {
@@ -75,6 +75,16 @@
     }
   }
 
+  @keyframes fade-in-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(65px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @media all and (max-width: 575px) {
       .homepage {
@@ -114,16 +124,7 @@
   }
 }
 
-@keyframes fade-in-bottom {
-  from {
-    opacity: 0;
-    transform: translateY(65px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
   // .vertical_grid {
   //   position: absolute;
   //   padding-right: 200px;

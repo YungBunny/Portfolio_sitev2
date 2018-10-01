@@ -45,7 +45,7 @@ export default class HomePage extends React.Component {
                         </ParallaxMousemove>
                     </div>
 
-                    <div>
+                    <div className='homepagedesc'>
                         <HomepageDesc />
                     </div>
                     <div></div>
