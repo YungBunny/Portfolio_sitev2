@@ -4,7 +4,6 @@ import scrollToComponent from 'react-scroll-to-component';
 import "animate.css/animate.min.css";
 import MainBlob from './MainBlob';
 import PortfolioPage from './PortfolioPage';
-import StickyNav from './StickyNav';
 import ChanelFu from '../images/chanelfu.svg';
 import HomepageDesc from '../images/homepageDesc.svg';
 
@@ -13,14 +12,37 @@ console.log('hey');
 
 export default class HomePage extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
+     constructor(props) {
+        super(props);
     //     this.state = { isMenu: false }
-    // }
+     }
 
     // toggleMenupath = () => {
     //     this.setState({ isMenu: !this.state.isMenu })
     // }
+
+    // hasClass
+    hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+    // toggleClass
+    toggleClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(" " + className + " ") >= 0) {
+                newClass = newClass.replace(" " + className + " ", " ");
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+    onMenuClick() {
+        var elem = window.document.getElementById('toggle');
+        this.toggleClass(elem, 'on');
+        return false;
+    }
+
 
     render() {
         const style = {
@@ -49,12 +71,21 @@ export default class HomePage extends React.Component {
                         <HomepageDesc />
                     </div>
                     <div></div>
+                    <div onClick={this.onMenuClick.bind(this)} id="toggle">
+                        <a onClick={this.onMenuClick.bind(this)} id="toggle"><span></span></a>
 
+                        <div id="menu">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className='portpage' ref={(section) => { this.PortfolioPage = section; }}>
                         <div>
                             <PortfolioPage />
                         </div>
-
                     </div>
                 </div>
 
