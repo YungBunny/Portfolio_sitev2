@@ -1,38 +1,24 @@
 import React from 'react';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import WardrobeStyling from '../images/WARDROBESTYLING.svg';
+import Path11 from '../images/Path11.svg';
+import Uiux from '../images/UIUX.svg';
 
 const PortfolioPage = () => (
-
-  <div>
-
-    <div>
-      <ScrollAnimation animateIn='agent-1'>
-        <h1>
-          Hey
-        </h1>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn='agent-2'>
-        <h1>
-          -----------------------
-      </h1>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn='agent-3'>
-        <h1>
-          Thanks for
-        </h1>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn='agent-3'>
-        <h1>
-         stopping by
-        </h1>
-      </ScrollAnimation>
-      
-    <div>The name's Chanel. I'm a responsible Wardrobe Stylist turned Software Engineer. </div>
+  <div className='portfolio'>
+    <ScrollAnimation animateIn='agent-1'>
+      <WardrobeStyling />
+    </ScrollAnimation>
+    <ScrollAnimation animateIn='agent-2'>
+      <Path11 />
+    </ScrollAnimation>
+    <ScrollAnimation animateIn='agent-3'>
+      <Uiux />
+    </ScrollAnimation>
     <div></div>
-    </div>
+    <div></div>
   </div>
-
-);
+)
 
 export default PortfolioPage;

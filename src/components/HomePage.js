@@ -6,6 +6,7 @@ import MainBlob from './MainBlob';
 import PortfolioPage from './PortfolioPage';
 import ChanelFu from '../images/chanelfu.svg';
 import HomepageDesc from '../images/homepageDesc.svg';
+import StickyNavigation from './StickyNav';
 
 
 console.log('hey');
@@ -14,7 +15,9 @@ export default class HomePage extends React.Component {
 
      constructor(props) {
         super(props);
-    //     this.state = { isMenu: false }
+        console.log('constructor');
+        this.onMenuClick = this.onMenuClick.bind(this);
+        //this.state = { isMenu: false }
      }
 
     // toggleMenupath = () => {
@@ -23,11 +26,13 @@ export default class HomePage extends React.Component {
 
     // hasClass
     hasClass(elem, className) {
+        console.log('has class');
         return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
     }
     // toggleClass
     toggleClass(elem, className) {
         var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
+        console.log('toggleClass');
         if (hasClass(elem, className)) {
             while (newClass.indexOf(" " + className + " ") >= 0) {
                 newClass = newClass.replace(" " + className + " ", " ");
@@ -71,17 +76,7 @@ export default class HomePage extends React.Component {
                         <HomepageDesc />
                     </div>
                     <div></div>
-                    <div onClick={this.onMenuClick.bind(this)} id="toggle">
-                        <a onClick={this.onMenuClick.bind(this)} id="toggle"><span></span></a>
-
-                        <div id="menu">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div><StickyNavigation /></div>
                     <div className='portpage' ref={(section) => { this.PortfolioPage = section; }}>
                         <div>
                             <PortfolioPage />

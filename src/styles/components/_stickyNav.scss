@@ -8,7 +8,9 @@
   display: block;
   width: 28px;
   height: 30px;
-  margin: 30px auto 10px;
+  margin: 0px auto 10px 150px;
+  //animation: dash 7s linear forwards, FillIn 0.5s ease-in forwards;
+  cursor: pointer;
 }
 
 #toggle span:after,
@@ -58,7 +60,7 @@
   color: #999;
   width: 200px;
   padding: 10px;
-  margin: auto;
+  margin: auto auto -15px 54px;
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
   text-align: center;
   border-radius: 4px;
@@ -101,3 +103,22 @@ li a:focus {
 /* demo styles */
 //body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
 p, p a { font-size: 12px;text-align: center; color: #888; }
+
+@keyframes dash {
+    from { 
+        fill-opacity: 0; 
+    }
+    to {
+        stroke-dashoffset: 0;  
+        fill-opacity: 0; 
+    }
+  }
+
+  @keyframes FillIn {
+    from { 
+        fill-opacity: 0; 
+    }
+    to { 
+        fill-opacity: 1; 
+    }
+  }

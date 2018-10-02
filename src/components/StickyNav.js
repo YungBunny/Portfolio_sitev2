@@ -17,10 +17,11 @@ export default class StickyNavigation extends React.Component {
     hasClass(elem, className) {
         return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
     }
+
     // toggleClass
     toggleClass(elem, className) {
         var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
-        if (hasClass(elem, className)) {
+        if (this.hasClass(elem, className)) {
             while (newClass.indexOf(" " + className + " ") >= 0) {
                 newClass = newClass.replace(" " + className + " ", " ");
             }
@@ -29,6 +30,7 @@ export default class StickyNavigation extends React.Component {
             elem.className += ' ' + className;
         }
     }
+
     onMenuClick() {
         var elem = window.document.getElementById('toggle');
         this.toggleClass(elem, 'on');
