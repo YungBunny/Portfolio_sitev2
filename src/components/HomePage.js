@@ -78,7 +78,7 @@ export default class HomePage extends React.Component {
                     <div></div>
                     <div><StickyNavigation /></div>
                     <div className='portpage' ref={(section) => { this.PortfolioPage = section; }}>
-                        <div>
+                        <div className='port_titles'>
                             <PortfolioPage />
                         </div>
                     </div>

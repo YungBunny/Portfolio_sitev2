@@ -5,6 +5,10 @@
     grid-gap: 20px;
 }
 
+.homepagedesc {
+  animation: fade-in-top ease 4s forwards;
+}
+
 .homepage > div:nth-child(1) {
     grid-column: 2 / 2;
     grid-row: 1 / 2;
@@ -13,16 +17,11 @@
     animation: fade-in-bottom ease 4s forwards;
 }
 
-.main_blob {
-  grid-column: 2/span 3;
-  grid-row: 2/span 1;
-}
-
 .homepage > div:nth-child(3) {
   grid-column: 4 / 4;
   grid-row: 3 / 3;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 65%;
   //animation: fade-in-bottom ease 4s forwards;
 }
@@ -92,6 +91,17 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-top {
+    from {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(65);
     }
   }
 

@@ -1,7 +1,5 @@
 .stickynav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: fade-in-bottom ease 4s forwards;
 }
 
 #toggle {
@@ -9,7 +7,7 @@
   width: 28px;
   height: 30px;
   margin: 0px auto 10px 150px;
-  //animation: dash 7s linear forwards, FillIn 0.5s ease-in forwards;
+  // animation: dash 7s linear forwards, FillIn 0.5s ease-in forwards;
   cursor: pointer;
 }
 
@@ -89,17 +87,41 @@ ul, li, li a {
 }
 li a {
   padding: 5px;
-  color: #888;
   text-decoration: none;
-  transition: all .2s;
+  color: black;
+  background: white;
+
+  //transition: all .2s;
 }
 li a:hover,
 li a:focus {
-  background: #1ABC9C;
-  color: #fff;
+  // text-decoration: none;
+  // background-clip: text;
+  // color: transparent;
+  // background-image: linear-gradient(
+  //   	to right,
+	//     $electric,
+	//     $electric 50%,
+	//     $spicy 50%);
+	//     background-size: 200% 100%;
+  //     background-position: 100%;
+  // //color: $electric;
+  // transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+  // background-position: 0%;
+  background: linear-gradient( crimson , crimson) white no-repeat 0 0;
+  background-size: 0 100%;
+  animation: stripes 0.5s linear 1 forwards;
+}
+li a,li a:hover,
+li a:focus {
+mix-blend-mode: multiply;
 }
 
-
+@keyframes stripes {
+  to {
+    background-size:100% 100%;
+  }
+}
 /* demo styles */
 //body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
 p, p a { font-size: 12px;text-align: center; color: #888; }

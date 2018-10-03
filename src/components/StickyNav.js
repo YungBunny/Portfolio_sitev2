@@ -41,7 +41,7 @@ export default class StickyNavigation extends React.Component {
         // const { isToggle } = this.state;
 
         return (
-            <div>
+            <div className='stickynav'>
                 <a onClick={this.onMenuClick.bind(this)} id="toggle"><span></span></a>
 
                 <div id="menu">

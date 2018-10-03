@@ -6,48 +6,70 @@
 //     margin: 0;
 //     font-family: Arial;
 // }
-.portfolio {
-  // display: flex;
-  // align-content: center;
-  // grid-column: 3 / 3;
-  // grid-row: 2 / 2;
-}
+
 
 .portpage {
-  grid-column: 1/span 5;
-  grid-row: 5/span 2;
-    // display: grid;
-    // grid-template-columns: repeat(5,1fr);
-    // grid-auto-rows: 290px minmax(200px, auto);
-    // grid-gap: 20px;
-    background: #eee;
-}
-
-.portpage > div:nth-child(1) {
-  grid-column: 2 /span 3;
-  grid-row: 6 /span 1;
-  animation: fade-in-right ease 4s forwards;
+  // grid-column: 1/span 5;
+  // grid-row: 5/span 3;
+  // display: grid;
+  // grid-template-columns: repeat(5,1fr);
+  // grid-auto-rows: 290px minmax(200px, auto);
+  // grid-gap: 20px;
+  display: flex;
   align-items: center;
+  background: #eee;
 }
 
-.portpage > div:nth-child(6) {
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
+.port_titles {
+  display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 2px;
 }
+
+.portfolio {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// .portpage > div:nth-child(1) {
+//   grid-column: 2 /span 3;
+//   grid-row: 6 /span 1;
+//   animation: fade-in-right ease 4s forwards;
+//   align-items: center;
+// }
 
 .agent-1, .agent-3 {
     opacity: 0;
-    animation: fade-in-right ease 0.4s forwards;
+    animation: fade-in-right ease-in-out 0.4s forwards;
+    display: flex;
+    justify-content: center;
+  }
+
+  .agent-3 {
+    margin-top: 10px;
   }
   
   .agent-2 {
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
-    animation-delay: 0.4s;
+    //transform: scaleX(0);
+    //transform-origin: left;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500; 
+    animation: dash 5s linear forwards
+    // animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s forwards;
+    // animation-delay: 0.4s;
   }
 
-  @keyframes fade-in-right2 {
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fade-in-right {
     from {
       opacity: 0;
       transform: translateX(-15px);
@@ -67,28 +89,28 @@
     }
   }
 
-.port__row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-    background: $eggshell;
-}
+// .port__row {
+//     display: -ms-flexbox; /* IE10 */
+//     display: flex;
+//     -ms-flex-wrap: wrap; /* IE10 */
+//     flex-wrap: wrap;
+//     padding: 0 4px;
+//     background: $eggshell;
+// }
 
-.port__column {
-    -ms-flex: 24.5%; /* IE10 */
-    flex: 24%;
-    max-width: 24.5%;
-    padding: 0 4px;
-    padding-bottom: $m-size;
-}
+// .port__column {
+//     -ms-flex: 24.5%; /* IE10 */
+//     flex: 24%;
+//     max-width: 24.5%;
+//     padding: 0 4px;
+//     padding-bottom: $m-size;
+// }
 
-.port__column > img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
+// .port__column > img {
+//     margin-top: 8px;
+//     vertical-align: middle;
+//     width: 100%;
+// }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
