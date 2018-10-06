@@ -1,7 +1,14 @@
 import React from 'react';
+import scrollToComponent from 'react-scroll-to-component';
+import PortfolioPage from './PortfolioPage';
 
 export default class StickyNavigation extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.onMenuClick = this.onMenuClick.bind(this);
+        // this.PortfolioPage = this.PortfolioPage.bind(this);
+    }
     // constructor(props) {
     //     super(props);
     //     toggleClass(this, 'on');
@@ -42,13 +49,13 @@ export default class StickyNavigation extends React.Component {
 
         return (
             <div className='stickynav'>
-                <a onClick={this.onMenuClick.bind(this)} id="toggle"><span></span></a>
+                <a onClick={this.onMenuClick} id="toggle"><span></span></a>
 
                 <div id="menu">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a>HOME</a></li>
+                        <li><a onClick={() => scrollToComponent(this.PortfolioPage, { offset: 0, align: 'top', duration: 1500, ease: 'inOutQuint' })} className='port'>PORTFOLIO</a></li>
+                        <li><a>ABOUT</a></li>
                     </ul>
                 </div>
             </div>

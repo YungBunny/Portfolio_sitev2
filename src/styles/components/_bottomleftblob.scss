@@ -1,4 +1,4 @@
-.bottom_left_blob div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6), {
+.bottom_left_blob > div:nth-child(1), .bottom_left_blob > div:nth-child(2), .bottom_left_blob > div:nth-child(3), .bottom_left_blob > div:nth-child(4), .bottom_left_blob > div:nth-child(5), .bottom_left_blob > div:nth-child(6), {
     fill-opacity: 0;
     animation: dash 6s linear forwards, FillIn 0.5s ease-in forwards;
     animation-delay: 0s, 2.5s;
@@ -12,28 +12,28 @@
 }
 
 .homepage_eggshellb {
-    margin-left: -105px;
-    margin-top: 5px;
+    // margin-left: -105px;
+    margin-top: -151px;
 }
 
 .homepage_crimsonb {
-    margin-left: -98px;
-    margin-top: 9px;
+    // margin-left: -98px;
+    margin-top: -143px;
 }
 
 .homepage_mintb {
-    margin-left: -92px;
-    margin-top: 15px;
+    margin-left: 3px;
+    margin-top: -132px;
 }
 
 .homepage_mustardb {
-    margin-left: -85px;
-    margin-top: 21px;
+    margin-left: 6px;
+    margin-top: -120px;
 }
 
 .homepage_electricb {
-    margin-left: -77px;
-    margin-top: 27px;
+    margin-left: 8px;
+    margin-top: -111px;
 }
 
 @keyframes dash {

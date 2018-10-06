@@ -1,9 +1,12 @@
-.top_left_blob div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6) {
+.top_left_blob > div:nth-child(1), .top_left_blob > div:nth-child(2), .top_left_blob > div:nth-child(3), .top_left_blob > div:nth-child(4), .top_left_blob > div:nth-child(5), .top_left_blob > div:nth-child(6) {
     fill-opacity: 0;
     animation: dash 17s linear forwards, FillIn 0.5s ease-in forwards;
     animation-delay: 0s, 2.5s;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
 }
 
 .homepage_blacka {
@@ -11,28 +14,28 @@
 }
 
 .homepage_olivea {
-    margin-left: -55px;
-    margin-top: 30px;
+    margin-right: 1px;
+    margin-top: 1px;
 }
 
 .homepage_spicya {
-    margin-left: -50px;
-    margin-top: 31px;
+    margin-right: 4px;
+    margin-top: 2px;
 }
 
 .homepage_minta {
-    margin-left: -45px;
-    margin-top: 32px;
+    margin-right: 5px;
+    margin-top: 1px;
 }
 
 .homepage_mustarda {
-    margin-left: -40px;
-    margin-top: 33px;
+    margin-right: 7px;
+    margin-top: 1px;
 }
 
 .homepage_peacha {
-    margin-left: -35px;
-    margin-top: 35px;
+    margin-right: 11px;
+    margin-top: 2px;
 }
 
 
