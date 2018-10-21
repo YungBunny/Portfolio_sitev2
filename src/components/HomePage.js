@@ -1,6 +1,7 @@
 import React from 'react';
 import scrollToComponent from 'react-scroll-to-component';
 import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 import MainBlob from './MainBlob';
 import MidLBlob from './MidLBlob';
 import TRBlob from './TopRightBlob';
@@ -11,8 +12,6 @@ import PortfolioPage from './PortfolioPage';
 import Path11 from '../images/portfolio/Path11.svg';
 import Drip from '../images/about/drip.svg';
 import AboutPage from './AboutPage';
-import ChanelFu from '../images/chanelfu.svg';
-import HomepageDesc from '../images/homepageDesc.svg';
 
 
 export default class HomePage extends React.Component {
@@ -97,7 +96,7 @@ export default class HomePage extends React.Component {
                         </div>
                     </div>
                     <div className='title'>
-                       CHANEL FU
+                        CHANEL FU
                     </div>
                     <div className='mainblob'><MainBlob /></div>
                     <div className='toplblob'><TLBlob /></div>
@@ -108,9 +107,21 @@ export default class HomePage extends React.Component {
                     <div className='desc'>RESPONSIBLE WARDROBE STYLIST TURNED UI / UX DESIGNER & SOFTWARE ENGINEER</div>
                 </div>
                 <div ref={(section) => { this.PortfolioPage = section; }} className='portfolio'>
-                    <div className='wardrobeStyling'>WARDROBE STYLING</div>
-                    <div className='midline'><Path11 /></div>
-                    <div className='uiuxDesign'>UI / UX & DEVELOPING</div>
+                    <div className='wardrobeStyling'>
+                        <ScrollAnimation animateIn='agent-1'>
+                            WARDROBE STYLING
+                    </ScrollAnimation>
+                    </div>
+                    <div className='midline'>
+                        <ScrollAnimation animateIn='agent-2'>
+                            <Path11 />
+                        </ScrollAnimation>
+                    </div>
+                    <div className='uiuxDesign'>
+                        <ScrollAnimation animateIn='agent-3'>
+                            UI / UX & DEVELOPING
+                    </ScrollAnimation>
+                    </div>
                 </div>
                 <div ref={(section) => { this.AboutPage = section; }} className='about'>
                     <div>HEY.</div>

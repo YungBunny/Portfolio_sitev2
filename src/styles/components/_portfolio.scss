@@ -1,57 +1,7 @@
-// * {
-//     box-sizing: border-box;
-// }
-
-// body {
-//     margin: 0;
-//     font-family: Arial;
-// }
-
-
-// .portpage {
-//   // grid-column: 1/span 5;
-//   // grid-row: 5/span 3;
-//   // display: grid;
-//   // grid-template-columns: repeat(5,1fr);
-//   // grid-auto-rows: 290px minmax(200px, auto);
-//   // grid-gap: 20px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background: #eee;
-// }
-
-// .port_titles {
-//   display: grid;
-//     grid-template-columns: repeat(1,1fr);
-//     grid-template-rows: repeat(3,1fr);
-//     grid-gap: 2px;
-// }
-
-// .portfolio {
-//     grid-column: 1 / 1;
-//     grid-row: 2 / 2;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-// }
-
-// .portpage > div:nth-child(1) {
-//   grid-column: 2 /span 3;
-//   grid-row: 6 /span 1;
-//   animation: fade-in-right ease 4s forwards;
-//   align-items: center;
-// }
 
 .agent-1, .agent-3 {
   opacity: 0;
   animation: fade-in-right ease-in-out 0.4s forwards;
-  display: flex;
-  justify-content: center;
-}
-
-.agent-3 {
-  margin-top: 10px;
 }
 
 .agent-2 {
@@ -64,11 +14,6 @@
   // animation-delay: 0.4s;
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 
 @keyframes fade-in-right {
   from {
@@ -81,52 +26,18 @@
   }
 }
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 @keyframes grow-left {
   from {
     transform: scaleX(0);
   }
   to {
     transform: scaleX(1);
-  }
-}
-
-// .port__row {
-//     display: -ms-flexbox; /* IE10 */
-//     display: flex;
-//     -ms-flex-wrap: wrap; /* IE10 */
-//     flex-wrap: wrap;
-//     padding: 0 4px;
-//     background: $eggshell;
-// }
-
-// .port__column {
-//     -ms-flex: 24.5%; /* IE10 */
-//     flex: 24%;
-//     max-width: 24.5%;
-//     padding: 0 4px;
-//     padding-bottom: $m-size;
-// }
-
-// .port__column > img {
-//     margin-top: 8px;
-//     vertical-align: middle;
-//     width: 100%;
-// }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .port__column {
-      -ms-flex: 50%;
-      flex: 45%;
-      max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .port__column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
   }
 }
