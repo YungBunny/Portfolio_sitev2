@@ -1,95 +1,60 @@
 import React from 'react';
-import ParallaxMousemove from 'react-parallax-mousemove';
-import Path6a from '../images/blobtopleft/Path_6.svg';
-import Path5a from '../images/blobtopleft/Path_5.svg';
-import Path4a from '../images/blobtopleft/Path_4.svg';
-import Path3a from '../images/blobtopleft/Path_3.svg';
-import Path2a from '../images/blobtopleft/Path_2.svg';
-import Path1a from '../images/blobtopleft/Path_1.svg';
+import Parallax from 'parallax-js';
+import Path6tl from '../images/blobtopleft/Path_6.svg';
+import Path5tl from '../images/blobtopleft/Path_5.svg';
+import Path4tl from '../images/blobtopleft/Path_4.svg';
+import Path3tl from '../images/blobtopleft/Path_3.svg';
+import Path2tl from '../images/blobtopleft/Path_2.svg';
+import Path1tl from '../images/blobtopleft/Path_1.svg';
 
 
 export default class TopLeftBlob extends React.Component {
-
+    componentDidMount() {
+        var scenetl = document.getElementById('scenetl');
+        var parallaxInstance = new Parallax(scenetl, {
+            relativeInput: true
+        });
+        var scene1tl = document.getElementById('scene1tl');
+        var parallaxInstance = new Parallax(scene1tl, {
+            relativeInput: true
+        });
+        var scene2tl = document.getElementById('scene2tl');
+        var parallaxInstance = new Parallax(scene2tl, {
+            relativeInput: true
+        });
+        var scene3tl = document.getElementById('scene3tl');
+        var parallaxInstance = new Parallax(scene3tl, {
+            relativeInput: true
+        });
+        var scene4tl = document.getElementById('scene4tl');
+        var parallaxInstance = new Parallax(scene4tl, {
+            relativeInput: true
+        });
+        var scene5tl = document.getElementById('scene5tl');
+        var parallaxInstance = new Parallax(scene5tl, {
+            relativeInput: true
+        });
+    }
     render() {
-        const style = {
-            infoLayerStyle: {
-                position: 'relative',
-                marginTop: '-60px'
-            }
-        }
         return (
-            <div className='top_left_blob'>
-                <div className='homepage_blacka'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.08,
-                        yFactor: 0.08,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 45
-                        }
-                    }}>
-                        <Path6a />
-                    </ParallaxMousemove.Layer>
+            <div className='tlblob'>
+                <div id='scenetl'>
+                    <Path6tl data-depth="0.15" />
                 </div>
-                <div className='homepage_olivea'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.07,
-                        yFactor: 0.07,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 50
-                        }
-                    }}>
-                        <Path5a />
-                    </ParallaxMousemove.Layer>
+                <div id='scene1tl'>
+                    <Path5tl data-depth="0.125" />
                 </div>
-                <div className='homepage_spicya'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.06,
-                        yFactor: 0.06,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 55
-                        }
-                    }}>
-                        <Path4a />
-                    </ParallaxMousemove.Layer>
+                <div id='scene2tl'>
+                    <Path4tl data-depth="0.1" />
                 </div>
-                <div className='homepage_minta'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.05,
-                        yFactor: 0.05,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 60
-                        }
-                    }}>
-                        <Path3a />
-                    </ParallaxMousemove.Layer>
+                <div id='scene3tl'>
+                    <Path3tl data-depth="0.075" />
                 </div>
-                <div className='homepage_mustarda'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.04,
-                        yFactor: 0.04,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 65
-                        }
-                    }}>
-                        <Path2a />
-                    </ParallaxMousemove.Layer>
+                <div id='scene4tl'>
+                    <Path2tl data-depth="0.05" />
                 </div>
-                <div className='homepage_peacha'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.03,
-                        yFactor: 0.03,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 70
-                        }
-                    }}>
-                        <Path1a />
-                    </ParallaxMousemove.Layer>
+                <div id='scene5tl'>
+                    <Path1tl data-depth="0.025" />
                 </div>
             </div>
         )

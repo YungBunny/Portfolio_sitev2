@@ -22,6 +22,7 @@
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
     "normalize.css": "7.0.0",
+    "parallax-js": "^3.1.0",
     "raw-loader": "^0.5.1",
     "react": "16.0.0",
     "react-animate-on-scroll": "^2.1.5",
@@ -30,7 +31,7 @@
     "react-parallax-mousemove": "^1.1.0",
     "react-scroll": "^1.7.10",
     "react-scroll-to-component": "^1.0.2",
-    "react-svg": "^5.0.22",
+    "react-svg": "^5.0.23",
     "react-svg-inline": "^2.1.1",
     "react-tilt": "^0.1.4",
     "sass-loader": "6.0.6",
@@ -45,6 +46,6 @@
     "react-parallax-hover": "^1.0.4",
     "react-svg-loader": "^2.1.0",
     "svg-inline-loader": "^0.8.0",
-    "url-loader": "^1.1.1"
+    "url-loader": "^1.1.2"
   }
 }

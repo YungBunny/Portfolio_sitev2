@@ -1,80 +1,52 @@
 import React from 'react';
-import ParallaxMousemove from 'react-parallax-mousemove';
-import Path5c from '../images/blobright/Path_5.svg';
-import Path4c from '../images/blobright/Path_4.svg';
-import Path3c from '../images/blobright/Path_3.svg';
-import Path2c from '../images/blobright/Path_2.svg';
-import Path1c from '../images/blobright/Path_1.svg';
+import Parallax from 'parallax-js';
+import Path5lr from '../images/blobright/Path_5.svg';
+import Path4lr from '../images/blobright/Path_4.svg';
+import Path3lr from '../images/blobright/Path_3.svg';
+import Path2lr from '../images/blobright/Path_2.svg';
+import Path1lr from '../images/blobright/Path_1.svg';
 
 export default class RightBlob extends React.Component {
 
+    componentDidMount() {
+        var scener = document.getElementById('scener');
+        var parallaxInstance = new Parallax(scener, {
+            relativeInput: true
+        });
+        var scene1r = document.getElementById('scene1r');
+        var parallaxInstance = new Parallax(scene1r, {
+            relativeInput: true
+        });
+        var scene2r = document.getElementById('scene2r');
+        var parallaxInstance = new Parallax(scene2r, {
+            relativeInput: true
+        });
+        var scene3r = document.getElementById('scene3r');
+        var parallaxInstance = new Parallax(scene3r, {
+            relativeInput: true
+        });
+        var scene4r = document.getElementById('scene4r');
+        var parallaxInstance = new Parallax(scene4r, {
+            relativeInput: true
+        });
+    }
     render() {
-        const style = {
-            infoLayerStyle: {
-                position: 'relative'
-            }
-        }
         return (
-            <div className='right_blob'>
-                <div className='homepage_forestc'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.07,
-                        yFactor: 0.07,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 50
-                        }
-                    }}>
-                        <Path5c />
-                    </ParallaxMousemove.Layer>
+            <div className='lrblob'>
+                <div id='scener'>
+                    <Path5lr data-depth="0.25" />
                 </div>
-                <div className='homepage_eggshellc'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.06,
-                        yFactor: 0.06,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 55
-                        }
-                    }}>
-                        <Path4c />
-                    </ParallaxMousemove.Layer>
+                <div id='scene1r'>
+                    <Path4lr data-depth="0.2" />
                 </div>
-                <div className='homepage_spicyc'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.05,
-                        yFactor: 0.05,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 60
-                        }
-                    }}>
-                        <Path3c />
-                    </ParallaxMousemove.Layer>
+                <div id='scene2r'>
+                    <Path3lr data-depth="0.15" />
                 </div>
-                <div className='homepage_mustardc'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.04,
-                        yFactor: 0.04,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 65
-                        }
-                    }}>
-                        <Path2c />
-                    </ParallaxMousemove.Layer>
+                <div id='scene3r'>
+                    <Path2lr data-depth="0.1" />
                 </div>
-                <div className='homepage_eggshellc1'>
-                    <ParallaxMousemove.Layer layerStyle={style.infoLayerStyle} config={{
-                        xFactor: 0.03,
-                        yFactor: 0.03,
-                        springSettings: {
-                            stiffness: 200,
-                            damping: 70
-                        }
-                    }}>
-                        <Path1c />
-                    </ParallaxMousemove.Layer>
+                <div id='scene4r'>
+                    <Path1lr data-depth="0.05" />
                 </div>
             </div>
         )

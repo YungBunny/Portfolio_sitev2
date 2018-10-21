@@ -1,56 +1,56 @@
-.bottom_left_blob > div:nth-child(1), .bottom_left_blob > div:nth-child(2), .bottom_left_blob > div:nth-child(3), .bottom_left_blob > div:nth-child(4), .bottom_left_blob > div:nth-child(5), .bottom_left_blob > div:nth-child(6), {
-    fill-opacity: 0;
-    animation: dash 6s linear forwards, FillIn 0.5s ease-in forwards;
-    animation-delay: 0s, 2.5s;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-}
+// .bottom_left_blob > div:nth-child(1), .bottom_left_blob > div:nth-child(2), .bottom_left_blob > div:nth-child(3), .bottom_left_blob > div:nth-child(4), .bottom_left_blob > div:nth-child(5), .bottom_left_blob > div:nth-child(6), {
+//     fill-opacity: 0;
+//     animation: dash 6s linear forwards, FillIn 0.5s ease-in forwards;
+//     animation-delay: 0s, 2.5s;
+//     stroke-dasharray: 1000;
+//     stroke-dashoffset: 1000;
+// }
 
-.homepage_peachb {
-    margin-left: 0px;
-    margin-top: 0px;
-}
+// .homepage_peachb {
+//     margin-left: 0px;
+//     margin-top: 0px;
+// }
 
-.homepage_eggshellb {
-    // margin-left: -105px;
-    margin-top: -151px;
-}
+// .homepage_eggshellb {
+//     // margin-left: -105px;
+//     margin-top: -151px;
+// }
 
-.homepage_crimsonb {
-    // margin-left: -98px;
-    margin-top: -143px;
-}
+// .homepage_crimsonb {
+//     // margin-left: -98px;
+//     margin-top: -143px;
+// }
 
-.homepage_mintb {
-    margin-left: 3px;
-    margin-top: -132px;
-}
+// .homepage_mintb {
+//     margin-left: 3px;
+//     margin-top: -132px;
+// }
 
-.homepage_mustardb {
-    margin-left: 6px;
-    margin-top: -120px;
-}
+// .homepage_mustardb {
+//     margin-left: 6px;
+//     margin-top: -120px;
+// }
 
-.homepage_electricb {
-    margin-left: 8px;
-    margin-top: -111px;
-}
+// .homepage_electricb {
+//     margin-left: 8px;
+//     margin-top: -111px;
+// }
 
-@keyframes dash {
-    from { 
-        fill-opacity: 0; 
-    }
-    to {
-        stroke-dashoffset: 0;  
-        fill-opacity: 0; 
-    }
-  }
+// @keyframes dash {
+//     from { 
+//         fill-opacity: 0; 
+//     }
+//     to {
+//         stroke-dashoffset: 0;  
+//         fill-opacity: 0; 
+//     }
+//   }
 
-  @keyframes FillIn {
-    from { 
-        fill-opacity: 0; 
-    }
-    to { 
-        fill-opacity: 1; 
-    }
-  }
+//   @keyframes FillIn {
+//     from { 
+//         fill-opacity: 0; 
+//     }
+//     to { 
+//         fill-opacity: 1; 
+//     }
+//   }

@@ -1,57 +1,57 @@
-.right_blob {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1,1fr);
-}
-.right_blob > div:nth-child(1), .right_blob > div:nth-child(2), .right_blob > div:nth-child(3), .right_blob > div:nth-child(4), .right_blob > div:nth-child(5) {
-    fill-opacity: 0;
-    animation: dash 10s linear forwards, FillIn 0.5s ease-in forwards;
-    animation-delay: 0s, 2.5s;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    display: flex;
-    justify-content: center;
-}
+// .right_blob {
+//     display: grid;
+//     grid-template-columns: repeat(1,1fr);
+//     grid-template-rows: repeat(1,1fr);
+// }
+// .right_blob > div:nth-child(1), .right_blob > div:nth-child(2), .right_blob > div:nth-child(3), .right_blob > div:nth-child(4), .right_blob > div:nth-child(5) {
+//     fill-opacity: 0;
+//     animation: dash 10s linear forwards, FillIn 0.5s ease-in forwards;
+//     animation-delay: 0s, 2.5s;
+//     stroke-dasharray: 1000;
+//     stroke-dashoffset: 1000;
+//     display: flex;
+//     justify-content: center;
+// }
 
-.homepage_forestc {
-    margin-top: 10px;
-}
+// .homepage_forestc {
+//     margin-top: 10px;
+// }
 
-.homepage_eggshellc {
-    // margin-left: -65px;
-    margin-top: -77px;
-}
+// .homepage_eggshellc {
+//     // margin-left: -65px;
+//     margin-top: -77px;
+// }
 
-.homepage_spicyc {
-    // margin-left: -61px;
-    margin-top: -75px;
-}
+// .homepage_spicyc {
+//     // margin-left: -61px;
+//     margin-top: -75px;
+// }
 
-.homepage_mustardc {
-    // margin-left: -59px;
-    margin-top: -73px;
-}
+// .homepage_mustardc {
+//     // margin-left: -59px;
+//     margin-top: -73px;
+// }
 
-.homepage_eggshellc1 {
-    // margin-left: -51px;
-    margin-top: -65px;
-}
+// .homepage_eggshellc1 {
+//     // margin-left: -51px;
+//     margin-top: -65px;
+// }
 
-@keyframes dash {
-    from { 
-        fill-opacity: 0; 
-    }
-    to {
-        stroke-dashoffset: 0;  
-        fill-opacity: 0; 
-    }
-  }
+// @keyframes dash {
+//     from { 
+//         fill-opacity: 0; 
+//     }
+//     to {
+//         stroke-dashoffset: 0;  
+//         fill-opacity: 0; 
+//     }
+//   }
 
-  @keyframes FillIn {
-    from { 
-        fill-opacity: 0; 
-    }
-    to { 
-        fill-opacity: 1; 
-    }
-  }
+//   @keyframes FillIn {
+//     from { 
+//         fill-opacity: 0; 
+//     }
+//     to { 
+//         fill-opacity: 1; 
+//     }
+//   }
