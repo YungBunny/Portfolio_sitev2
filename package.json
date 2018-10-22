@@ -26,6 +26,7 @@
     "raw-loader": "^0.5.1",
     "react": "16.0.0",
     "react-animate-on-scroll": "^2.1.5",
+    "react-cursor-position": "^3.0.3",
     "react-dom": "16.0.0",
     "react-modal": "2.2.2",
     "react-parallax-mousemove": "^1.1.0",

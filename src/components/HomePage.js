@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactCursorPosition, { INTERACTIONS } from 'react-cursor-position';
+import PositionLabel from './TouchableComponent';
 import scrollToComponent from 'react-scroll-to-component';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -8,10 +10,8 @@ import TRBlob from './TopRightBlob';
 import TLBlob from './TopLeftBlob';
 import LRBlob from './RightBlob';
 import BLBlob from './BottomLeftBlob';
-import PortfolioPage from './PortfolioPage';
 import Path11 from '../images/portfolio/Path11.svg';
 import Drip from '../images/about/drip.svg';
-import AboutPage from './AboutPage';
 
 
 export default class HomePage extends React.Component {
@@ -19,9 +19,8 @@ export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.onMenuClick = this.onMenuClick.bind(this);
-        this.state = { isTop: true }
+        this.state = { isTop: true, background: 'red' }
         //this.state = { isMenu: false }
-
     }
 
     componentDidMount() {
@@ -64,9 +63,33 @@ export default class HomePage extends React.Component {
         return false;
     }
 
+    testin(e) {
+        let color = 'violet'
+        if (e.position.x < 100) {
+            color = 'indigo'
+        }
+        if (e.position.x < 200 && e.position.x > 100) {
+            color = 'blue'
+        }
+        if (e.position.x < 300 && e.position.x > 200) {
+            color = 'green'
+        }
+        if (e.position.x < 400 && e.position.x > 300) {
+            color = 'yellow'
+        }
+        if (e.position.x < 500 && e.position.x > 400) {
+            color = 'orange'
+        }
+        if (e.position.x < 600 && e.position.x > 500) {
+            color = 'red'
+        }
+        console.log(color, e.position.x)
+        this.setState({
+            backgroundColor: color
+        })
+    }
+
     render() {
-
-
         const { isAbout } = this.state;
 
         // const { isMenu } = this.state;
@@ -109,8 +132,15 @@ export default class HomePage extends React.Component {
                 <div ref={(section) => { this.PortfolioPage = section; }} className='portfolio'>
                     <div className='wardrobeStyling'>
                         <ScrollAnimation animateIn='agent-1'>
-                            WARDROBE STYLING
-                    </ScrollAnimation>
+                            <ReactCursorPosition onPositionChanged={this.testin.bind(this)}
+                                activationInteractionMouse={INTERACTIONS.HOVER}
+                                hoverDelayInMs={0}
+                                hoverOffDelayInMs={0}>
+                                <PositionLabel
+                                    backgroundColor={this.state.backgroundColor}
+                                />
+                            </ReactCursorPosition>
+                        </ScrollAnimation>
                     </div>
                     <div className='midline'>
                         <ScrollAnimation animateIn='agent-2'>
@@ -124,8 +154,16 @@ export default class HomePage extends React.Component {
                     </div>
                 </div>
                 <div ref={(section) => { this.AboutPage = section; }} className='about'>
-                    <div>HEY.</div>
-                    <div>Thanks for stopping by.</div>
+                    <div>
+                        <ScrollAnimation animateIn='load-in'>
+                            HEY.
+                        </ScrollAnimation>
+                    </div>
+                    <div>
+                        <ScrollAnimation animateIn='load-in'>
+                            Thanks for stopping by.
+                        </ScrollAnimation>
+                    </div>
                     <div className='drip'><Drip /></div>
                     <div className="aboutText">
                         <div className='textGrid'>
@@ -137,20 +175,19 @@ export default class HomePage extends React.Component {
                     <div>I wanted to develop a more powerful skill that could create more change, so here I am.</div>
                     <div>SHALL WE?</div>
                     <div className='connect'>
-                        <div>email</div>
-                        <div>instajam</div>
-                        <div>linkedin</div>
-                        <div>github</div>
+                        <div><a href='mailto:fumanity@gmail.com'>email</a></div>
+                        <div><a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/fumanity/?hl=en'>instajam</a></div>
+                        <div><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/chanel-fu-fumanity/'>linkedin</a></div>
+                        <div><a target="_blank" rel="noopener noreferrer" href='https://github.com/YungBunny'>github</a></div>
                     </div>
                 </div>
             </div>
-
         )
     }
 }
 
 
-//------------------------------------------------------
+//------------------------------------------------------ reference to onclick instance
 // <div> 
 // {isMenu ? (
 //     <div className='path'>
