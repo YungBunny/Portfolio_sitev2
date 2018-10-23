@@ -126,7 +126,6 @@ export default class HomePage extends React.Component {
                     <div className='desc'>RESPONSIBLE WARDROBE STYLIST TURNED UI / UX DESIGNER & SOFTWARE ENGINEER</div>
                 </div>
                 <div ref={(section) => { this.PortfolioPage = section; }} className='portfolio'>
-                <PositionLabel backgroundImage={this.state.backgroundImage}/>
                     <div className='wardrobeStyling'>
                         <ScrollAnimation animateIn='agent-1'>
                             <ReactCursorPosition onPositionChanged={this.testin.bind(this)}
@@ -134,6 +133,7 @@ export default class HomePage extends React.Component {
                                 hoverDelayInMs={0}
                                 hoverOffDelayInMs={0}>  
                                 WARDROBE STYLING
+                                <PositionLabel backgroundImage={this.state.backgroundImage}/>
                             </ReactCursorPosition>
                         </ScrollAnimation>
                     </div>

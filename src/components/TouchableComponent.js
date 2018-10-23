@@ -4,12 +4,19 @@ import Image1 from '../images/styling_portfolio/Dreamingless-12-copy-2-compresso
 const PositionLabel = (props) => {
     const {
         isActive = false,
+        isPositionOutside = true,
         backgroundImage = Image1
     } = props;
 
     return (
         <div>
-            <img className= 'wsimages' src={backgroundImage} />
+            {isActive == true ? (
+                <div>
+                    <img className='wsimages' src={backgroundImage} />
+                </div>
+            ) : (
+                    <div></div>
+                )}
         </div>
     );
 };
