@@ -42,6 +42,10 @@
   grid-row: 5 / 7;
 }
 
+.wsimages {
+  width: 300px;
+}
+
 @media all and (max-width: 700px) {
   .portfolio > .midline > div > svg{
     width: 100% - 50;

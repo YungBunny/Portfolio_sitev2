@@ -12,6 +12,11 @@ import LRBlob from './RightBlob';
 import BLBlob from './BottomLeftBlob';
 import Path11 from '../images/portfolio/Path11.svg';
 import Drip from '../images/about/drip.svg';
+import Image1 from '../images/styling_portfolio/Dreamingless-12-copy-2-compressor.jpg';
+import Image2 from '../images/styling_portfolio/Dreamingless-16-copy-compressor.jpg';
+import Image3 from '../images/styling_portfolio/JUNE14_2-copy-compressor.jpg';
+import Image4 from '../images/styling_portfolio/lala-1_v1-compressor.jpg';
+import Image5 from '../images/styling_portfolio/lala-6_v1-compressor.jpg';
 
 
 export default class HomePage extends React.Component {
@@ -19,7 +24,7 @@ export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.onMenuClick = this.onMenuClick.bind(this);
-        this.state = { isTop: true, background: 'red' }
+        this.state = { isTop: true, backgroundImage: Image1 }
         //this.state = { isMenu: false }
     }
 
@@ -64,28 +69,19 @@ export default class HomePage extends React.Component {
     }
 
     testin(e) {
-        let color = 'violet'
+        let image = Image1
         if (e.position.x < 100) {
-            color = 'indigo'
+            image = Image2
         }
         if (e.position.x < 200 && e.position.x > 100) {
-            color = 'blue'
+            image = Image3
         }
         if (e.position.x < 300 && e.position.x > 200) {
-            color = 'green'
+            image = Image4
         }
-        if (e.position.x < 400 && e.position.x > 300) {
-            color = 'yellow'
-        }
-        if (e.position.x < 500 && e.position.x > 400) {
-            color = 'orange'
-        }
-        if (e.position.x < 600 && e.position.x > 500) {
-            color = 'red'
-        }
-        console.log(color, e.position.x)
+        console.log(image, e.position.x)
         this.setState({
-            backgroundColor: color
+            backgroundImage: image
         })
     }
 
@@ -130,15 +126,14 @@ export default class HomePage extends React.Component {
                     <div className='desc'>RESPONSIBLE WARDROBE STYLIST TURNED UI / UX DESIGNER & SOFTWARE ENGINEER</div>
                 </div>
                 <div ref={(section) => { this.PortfolioPage = section; }} className='portfolio'>
+                <PositionLabel backgroundImage={this.state.backgroundImage}/>
                     <div className='wardrobeStyling'>
                         <ScrollAnimation animateIn='agent-1'>
                             <ReactCursorPosition onPositionChanged={this.testin.bind(this)}
                                 activationInteractionMouse={INTERACTIONS.HOVER}
                                 hoverDelayInMs={0}
-                                hoverOffDelayInMs={0}>
-                                <PositionLabel
-                                    backgroundColor={this.state.backgroundColor}
-                                />
+                                hoverOffDelayInMs={0}>  
+                                WARDROBE STYLING
                             </ReactCursorPosition>
                         </ScrollAnimation>
                     </div>
@@ -150,7 +145,7 @@ export default class HomePage extends React.Component {
                     <div className='uiuxDesign'>
                         <ScrollAnimation animateIn='agent-3'>
                             UI / UX & DEVELOPING
-                    </ScrollAnimation>
+                        </ScrollAnimation>
                     </div>
                 </div>
                 <div ref={(section) => { this.AboutPage = section; }} className='about'>

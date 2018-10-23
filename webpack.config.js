@@ -35,7 +35,15 @@ module.exports = { // expose something to another file
                 }
                
             ]
-        }]
+        },{
+            test: /\.(jpg|png|gif)$/,
+            use: {
+              loader: "file-loader",
+              options: {
+                name: "[path][name].[hash].[ext]",
+              },
+            },
+          }]
     },
     devtool: 'cheap-module-eval-source-map', // helps with debugging, highlights source file
     devServer: {
