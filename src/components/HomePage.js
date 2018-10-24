@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactCursorPosition, { INTERACTIONS } from 'react-cursor-position';
 import PositionLabel from './TouchableComponent';
+import PositionLabel2 from './TouchableComponent2';
 import scrollToComponent from 'react-scroll-to-component';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -10,8 +11,8 @@ import TRBlob from './TopRightBlob';
 import TLBlob from './TopLeftBlob';
 import LRBlob from './RightBlob';
 import BLBlob from './BottomLeftBlob';
+import AboutPage from './AboutPage';
 import Path11 from '../images/portfolio/Path11.svg';
-import Drip from '../images/about/drip.svg';
 import Image1 from '../images/styling_portfolio/Dreamingless-12-copy-2-compressor.jpg';
 import Image2 from '../images/styling_portfolio/Dreamingless-16-copy-compressor.jpg';
 import Image3 from '../images/styling_portfolio/JUNE14_2-copy-compressor.jpg';
@@ -40,6 +41,9 @@ import Image25 from '../images/styling_portfolio/Screen-Shot-2018-05-18-at-4.21.
 import Image26 from '../images/styling_portfolio/Screen-Shot-2018-05-18-at-4.21.17-PM-compressor.png';
 import Image27 from '../images/styling_portfolio/Screen-Shot-2018-05-18-at-4.21.31-PM-compressor.png';
 import Image28 from '../images/styling_portfolio/Screen-Shot-2018-05-18-at-4.22.34-PM-compressor.png';
+import Imageui1 from '../images/uiuxportfolio/Screen Shot 2018-10-24 at 5.41.20 AM.png';
+import Imageui2 from '../images/uiuxportfolio/Screen Shot 2018-10-24 at 5.47.57 AM.png';
+import Imageui3 from '../images/uiuxportfolio/Screen Shot 2018-10-24 at 5.55.16 AM.png';
 
 
 export default class HomePage extends React.Component {
@@ -47,7 +51,7 @@ export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.onMenuClick = this.onMenuClick.bind(this);
-        this.state = { isTop: true, backgroundImage: Image1 }
+        this.state = { isTop: true, backgroundImage: Image1, backgroundShot: Imageui1 }
         //this.state = { isMenu: false }
     }
 
@@ -179,6 +183,22 @@ export default class HomePage extends React.Component {
             backgroundImage: image
         })
     }
+    testing(e) {
+        let image = Imageui1
+        if (e.position.x < 100) {
+            image = Imageui1
+        }
+        if (e.position.x < 200 && e.position.x > 100) {
+            image = Imageui2
+        }
+        if (e.position.x < 300 && e.position.x > 200) {
+            image = Imageui3
+        }
+        console.log(image, e.position.x)
+        this.setState({
+            backgroundShot: image
+        })
+    }
 
     render() {
         const { isAbout } = this.state;
@@ -222,10 +242,10 @@ export default class HomePage extends React.Component {
                 </div>
                 <div ref={(section) => { this.PortfolioPage = section; }} className='portfolio'>
                     <div className='wardrobeStyling'>
-                        <div className='yeah'>
+                        <div>
                             <ScrollAnimation animateIn='agent-1'>
                                 WARDROBE STYLING
-                    </ScrollAnimation>
+                            </ScrollAnimation>
                         </div>
                     </div>
                     <div className='wsHoverArea'>
@@ -237,50 +257,39 @@ export default class HomePage extends React.Component {
                                     hoverOffDelayInMs={0}>
                                     <PositionLabel backgroundImage={this.state.backgroundImage} />
                                     <div className='infront'>this should show the wardrobe styling</div>
-                                  
                                 </ReactCursorPosition>
                             </div>
                         </div>
                     </div>
-
                     <div className='midline'>
                         <ScrollAnimation animateIn='agent-2'>
                             <Path11 />
                         </ScrollAnimation>
                     </div>
                     <div className='uiuxDesign'>
-                        <ScrollAnimation animateIn='agent-3'>
-                            UI / UX & DEVELOPING
-                        </ScrollAnimation>
-                    </div>
-                </div>
-                <div ref={(section) => { this.AboutPage = section; }} className='about'>
-                    <div>
-                        <ScrollAnimation animateIn='load-in'>
-                            HEY.
-                        </ScrollAnimation>
-                    </div>
-                    <div>
-                        <ScrollAnimation animateIn='load-in'>
-                            Thanks for stopping by.
-                        </ScrollAnimation>
-                    </div>
-                    <div className='drip'><Drip /></div>
-                    <div className="aboutText">
-                        <div className='textGrid'>
-                            <div>The name’s Chanel Fu. California born, Berlin based. I have a strong passion for positive change through tech and design. Always looking for people to learn, grow, & create with.</div>
-                            <div>After graduating with my Bachelor’s in Business with a focus in Marketing, I became a freelance Wardrobe Stylist with a focus in ethical and sustainable fashion.</div>
-                            <div>Fast forward 3 years and I found myself sliding into my next career as a Software Engineer having built my programming foundation in C while attending 42 Silicon Valley.</div>
+                        <div>
+                            <ScrollAnimation animateIn='agent-3'>
+                                UI / UX & DEVELOPING
+                            </ScrollAnimation>
                         </div>
                     </div>
-                    <div>I wanted to develop a more powerful skill that could create more change, so here I am.</div>
-                    <div>SHALL WE?</div>
-                    <div className='connect'>
-                        <div><a href='mailto:fumanity@gmail.com'>email</a></div>
-                        <div><a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/fumanity/?hl=en'>instajam</a></div>
-                        <div><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/chanel-fu-fumanity/'>linkedin</a></div>
-                        <div><a target="_blank" rel="noopener noreferrer" href='https://github.com/YungBunny'>github</a></div>
+                    <div className='UIHoverArea'>
+                        <div className='UIHoverAreaGrid'>
+                            <div className='hoverRow'>
+                                <ReactCursorPosition onPositionChanged={this.testing.bind(this)}
+                                    activationInteractionMouse={INTERACTIONS.HOVER}
+                                    hoverDelayInMs={0}
+                                    hoverOffDelayInMs={0}>
+                                    <div className='infront2'>UIUX / developing</div>
+                                    <PositionLabel2 backgroundShot={this.state.backgroundShot} />
+                                 
+                                </ReactCursorPosition>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div ref={(section) => { this.AboutPage = section; }}>
+                    <AboutPage />
                 </div>
             </div>
         )

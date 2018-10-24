@@ -1,69 +1,40 @@
-// import React from 'react';
-// import Drip from '../images/about/drip.svg';
-// import Hey from '../images/about/hey.svg';
-// import Thanks from '../images/about/thanks.svg';
-// import Thename from '../images/about/thename.svg';
-// import Aftergraduating from '../images/about/aftergraduating.svg';
-// import Fastforward from '../images/about/fastforward.svg';
-// import Iwanted from '../images/about/iwanted.svg';
-// import Shallwe from '../images/about/shallwe.svg';
-// import Instajam from '../images/about/instajam.svg';
-// import Linkedin from '../images/about/linkedin.svg';
-// import Github from '../images/about/github.svg';
-// import "animate.css/animate.min.css";
-// import ScrollAnimation from 'react-animate-on-scroll';
-
-// export default class AboutPage extends React.Component {
-//     render() {
+import React from 'react';
+import Drip from '../images/about/drip.svg';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
-//         return (
-//             <div className='abouts'>
-//                 <div className='heygrid'>
-//                     <div className='heytwo'>
-//                         <ScrollAnimation animateIn='loadabout'>
-//                             <Hey />
-//                         </ScrollAnimation>
-//                         <div>
-//                             <ScrollAnimation animateIn='loadabout'>
-//                                 <Thanks />
-//                             </ScrollAnimation>
-//                         </div>
-//                     </div>
-//                     <div>
-//                         <Drip />
-//                     </div>
-//                     <div className='aboutblurbs'>
-//                         <div>
-//                             <ScrollAnimation animateIn='loadabout'>
-//                                 <Thename />
-//                             </ScrollAnimation>
-//                         </div>
-//                         <div>
-//                             <ScrollAnimation animateIn='loadabout'>
-//                                 <Aftergraduating />
-//                             </ScrollAnimation>
-//                         </div>
-//                         <div>
-//                             <ScrollAnimation animateIn='loadabout'>
-//                                 <Fastforward />
-//                             </ScrollAnimation>
-//                         </div>
-//                     </div>
-//                     <div>
-//                         <Iwanted />
-//                     </div>
-//                     <div>
-//                         <Shallwe />
-//                     </div>
-//                     <div>
-//                         <Instajam />
-//                         <Linkedin />
-//                         <Github />
-//                     </div>
-//                 </div>
+export default class AboutPage extends React.Component {
 
-//             </div>
-//         )
-//     }
-// }
+    render() {
+        return (
+            <div className='about'>
+                <div>
+                    <ScrollAnimation animateIn='load-in'>
+                        HEY.
+                        </ScrollAnimation>
+                </div>
+                <div>
+                    <ScrollAnimation animateIn='load-in'>
+                        Thanks for stopping by.
+                        </ScrollAnimation>
+                </div>
+                <div className='drip'><Drip /></div>
+                <div className="aboutText">
+                    <div className='textGrid'>
+                        <div>The name’s Chanel Fu. California born, Berlin based. I have a strong passion for positive change through tech and design. Always looking for people to learn, grow, & create with.</div>
+                        <div>After graduating with my Bachelor’s in Business with a focus in Marketing, I became a freelance Wardrobe Stylist with a focus in ethical and sustainable fashion.</div>
+                        <div>Fast forward 3 years and I found myself sliding into my next career as a Software Engineer having built my programming foundation in C while attending 42 Silicon Valley.</div>
+                    </div>
+                </div>
+                <div>I wanted to develop a more powerful skill that could create more change, so here I am.</div>
+                <div>SHALL WE?</div>
+                <div className='connect'>
+                    <div><a href='mailto:fumanity@gmail.com'>email</a></div>
+                    <div><a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/fumanity/?hl=en'>instajam</a></div>
+                    <div><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/chanel-fu-fumanity/'>linkedin</a></div>
+                    <div><a target="_blank" rel="noopener noreferrer" href='https://github.com/YungBunny'>github</a></div>
+                </div>
+            </div>
+        )
+    }
+}

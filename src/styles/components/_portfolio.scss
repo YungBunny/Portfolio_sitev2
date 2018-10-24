@@ -40,18 +40,37 @@
 .hoverRow{
   grid-row: 1 / 5;
   grid-column: 1 / 4;
-  //margin-top: 100px;
 }
 
 .infront{
   display: grid;
-  background: $aluminum; 
   grid-row: 1;
   grid-column: 1 / 4;
   color: $aluminum;
-  z-index: 1;
 }
  
+.UIHoverArea{
+  display: grid;
+  grid-column: 2 / 6;
+  grid-row: 6 / 10;
+}
+.UIHoverAreaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 400px));
+  grid-template-rows: repeat(4, minmax(10px, 110px));
+  justify-items: center;
+}
+
+.hoverRow{
+  grid-row: 1 / 5;
+  grid-column: 1 / 4;
+}
+
+.infront2{
+  display: grid;
+  grid-row: 1;
+  color: $aluminum;
+}
  
 .portfolio > .midline > div > svg{
   width: 100% - 20;
@@ -73,12 +92,9 @@
   width: 300px;
   margin-top: 60px;
 }
-
-// .wardrobeStyling > div >div {
-//   display: grid;
-//   grid-row: 1;
-//   grid-column: 1 / 5;
-// }
+.wsimages2 {
+  height: 300px;
+}
 
 @media all and (max-width: 700px) {
   .portfolio > .midline > div > svg{
