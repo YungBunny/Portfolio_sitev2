@@ -1,14 +1,16 @@
 # Portfolio_sitev2
 redesign/implementation of my portfolio website
 
-To build:
+# To build:
 
 ```
 $ git clone https://github.com/YungBunny/Portfolio_sitev2.git
 $ yarn run dev-server
 ```
 
-I know this website isn't perfect, there are some bugs to be fixed, but this website was a huge learning experience for me. I learned especially a lot about CSS grid, something I was determined to practice once starting the project. 
+I know this website isn't perfect, there are some bugs to be fixed, but this website was a huge learning experience for me. I learned especially a lot about CSS grid, something I was determined to practice once starting the project. I wanted to take the opportunity to get as much practice with React, Webpack, HTML, & CSS. No better way to learn than truly challenging yourself!
+
+# Challenges I've come across and have yet to resolve/ features I have yet to add: 
 
 I have found that the parallax effect is challenging me in resizing the SVG when the screen gets smaller, so if anybody knows the fix, please holler!
 
@@ -18,4 +20,6 @@ The portfolio section has a hover effect. If you hover at the top of the page, i
 
 I would also like to add a loading animation. 
 
-This design could have been simplified, but I wanted to challenge myself in designing and implementing a design that was different from most websites out there. I love pushing boundaries and I know with more experience, practice, and iterations, this website will get built better and better. :^)
+# Conclusion
+
+This design could have been simplified, but I wanted to challenge myself in designing and implementing something that was different from most websites out there. I love pushing boundaries and I know with more experience, practice, and iterations, this website will get built better and better. :^)
