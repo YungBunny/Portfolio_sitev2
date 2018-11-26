@@ -1,7 +1,7 @@
 # Portfolio_sitev2
 redesign/implementation of my portfolio website
 
-_**To build:**_
+_**To run dev server:**_
 
 ```
 $ git clone https://github.com/YungBunny/Portfolio_sitev2.git
