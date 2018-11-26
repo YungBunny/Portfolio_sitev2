@@ -5,6 +5,8 @@ _**To run dev server:**_
 
 ```
 $ git clone https://github.com/YungBunny/Portfolio_sitev2.git
+$ cd Portfolio_sitev2
+$ yarn
 $ yarn run dev-server
 ```
 
