@@ -15,7 +15,7 @@ I know this website isn't perfect, there are some bugs to be fixed, but this web
 _**Challenges I've come across and have yet to resolve/ features I have yet to add:**_
 
 I have found that the parallax effect is challenging me in resizing the SVG when the screen gets smaller, so if anybody knows the fix, please holler!
-edit: I found an edit for this: I have simply set `overflow: hidden` to the parent div.
+edit: I found an edit for this: I have simply set `overflow: hidden` to the main container div.
 
 Fun fact, the parallax effect is also working on mobile as a gyroscope effect. If you move your phone around, the blobs will dance. :o)
 
