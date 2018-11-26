@@ -3,6 +3,7 @@
   grid-template-columns: repeat(6, minmax(10px, 400px));
   grid-template-rows: repeat(9, minmax(10px, 110px));
   background: $olive-gold;
+  overflow: hidden;
 }
 ////////////hamburger menu
 .hammenu {
@@ -34,7 +35,7 @@
   grid-row: 7;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   color: white;
   letter-spacing: 2px;
 }

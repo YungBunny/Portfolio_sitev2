@@ -1,192 +1,191 @@
 ////////////// about section
 .about{
-    display: grid;
-    grid-template-columns: repeat(6, minmax(10px, 400px));
-    grid-template-rows: repeat(9, minmax(10px, 110px));
-    background: black;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    // font-weight: 500;
-    text-align: left;
-    color: white;
-    // letter-spacing: 5px;
-  }
-  
-  .about > div:nth-child(1),
-  .about > div:nth-child(2) {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    z-index: 2;
-  }
-  
-  .about > div:nth-child(1) > *{
-    font-size: 25px;
-    color: $electric;
-    margin: 60px;
-    letter-spacing: 5px;
-  }
-  
-  .about > div:nth-child(2) {
-    margin: 90px 0 0 60px;
-  }
-  
-  .about > div:nth-child(5) {
-    grid-column: 3 / 7;
-    grid-row: 8;
-    display: grid;
-    align-content: start;
-    margin-right: 40px;
-    text-align: right;
-  }
-  
-  .about > div:nth-child(6) {
-    grid-column: 5 / 7;
-    grid-row: 8;
-    display: grid;
-    justify-content: center;
-    align-content: end;
-    font-size: 25px;
-    color: $electric;
-    letter-spacing: 5px;
-    // margin-right: 15px;
-  }
-  
-  .drip {
-    grid-column: 1 / 7;
-    grid-row: 1 / 3;
-    display: grid;
-    align-content: start;
-    justify-content: right;
-    margin-top: -1px;
-  }
-  
-  .drip > *{
-    width: 100%;
-  }
-  
-  .aboutText {
-    grid-column: 2 / 6;
-    grid-row: 4 / 7;
-    margin: 20px 40px;
-    display: grid;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .textGrid{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(10px, 400px));
-    grid-template-rows: repeat(3, minmax(10px, 110px));
-    grid-gap: 50px;
-  }
-  
-  .connect {
-    grid-column: 5 / 7;
-    grid-row: 9;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .connect > * {
-    color:white;
-    margin: 10px;
-    cursor: pointer;
-  }
-
-  .connect > div > a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .load-in {
-    opacity: 0;
-    animation: fade-in-right ease-in-out 1s forwards;
-  }
-
-  @media all and (max-width: 700px) {
-    .drip {
-        grid-column: 3 / 7;
-        grid-row: 1 / 3;
-        display: grid;
-        justify-items: right;
-        align-items: start;
-      }
-      .drip > *{
-        //margin-right: -20px;
-         width: 100% - 10;
-        height: 100%;
-      }
-      .aboutText {
-        margin: 30px;
-        grid-row: 3 / 6;
-      }
-        
-      .textGrid {
-        font-size: 18px;
-      }
-      .textGrid > div:nth-child(1) {
-        margin-top: 0;
-        grid-row: 1;
-        grid-column: 1 / 4;
-      }
-      .textGrid > div:nth-child(2) {
-        grid-row: 2;
-        grid-column: 1 / 4;
-      }
-      .textGrid > div:nth-child(3) {
-        grid-row: 3;
-        grid-column: 1 / 4;
-      }
-      
-      .about > div:nth-child(5) {
-        grid-column: 3 / 7;
-        grid-row: 8;
-        display: grid;
-        align-content: start;
-        margin-right: 30px;
-      }
-      .about > div:nth-child(6) {
-        grid-column: 3 / 7;
-        grid-row: 9;
-        display: grid;
-        align-content: start;
-        // margin-right: 20px;
-      }
-    
-      .connect {
-        grid-column: 3 / 7;
-      }
-    }
-@media all and (max-width: 375px) {
-    .drip {
-        grid-column: 2 / 7;
-        grid-row: 1 / 2;
-        display: grid;
-        justify-items: right;
-        align-items: start;
-      }
-      .drip > *{
-        margin-right: -13px;
-      }
-    
-      .textGrid{
-        font-size: 15px;
-      }
-    
-      .about > div:nth-child(5) {
-        font-size: 15px;
-      }
-    
-      .about > div:nth-child(6) {
-        grid-column: 3 / 7;
-      }
-    
-      .connect {
-        grid-column: 2 / 7;
-      }
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10px, 400px));
+  grid-template-rows: repeat(9, minmax(10px, 110px));
+  background: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  // font-weight: 500;
+  text-align: left;
+  color: white;
+  // letter-spacing: 5px;
 }
 
+.about > div:nth-child(1),
+.about > div:nth-child(2) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  z-index: 2;
+}
+
+.about > div:nth-child(1) > *{
+  font-size: 25px;
+  color: $electric;
+  margin: 60px;
+  letter-spacing: 5px;
+}
+
+.about > div:nth-child(2) {
+  margin: 90px 0 0 60px;
+}
+
+.about > div:nth-child(5) {
+  grid-column: 3 / 7;
+  grid-row: 8;
+  display: grid;
+  align-content: start;
+  margin-right: 40px;
+  text-align: right;
+}
+
+.about > div:nth-child(6) {
+  grid-column: 5 / 7;
+  grid-row: 8;
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  font-size: 25px;
+  color: $electric;
+  letter-spacing: 5px;
+  // margin-right: 15px;
+}
+
+.drip {
+  grid-column: 1 / 7;
+  grid-row: 1 / 3;
+  display: grid;
+  align-content: start;
+  justify-content: right;
+  margin-top: -1px;
+}
+
+.drip > *{
+  width: 100%;
+}
+
+.aboutText {
+  grid-column: 2 / 6;
+  grid-row: 4 / 7;
+  margin: 20px 40px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.textGrid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 400px));
+  grid-template-rows: repeat(3, minmax(10px, 110px));
+  grid-gap: 50px;
+}
+
+.connect {
+  grid-column: 5 / 7;
+  grid-row: 9;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.connect > * {
+  color:white;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.connect > div > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.load-in {
+  opacity: 0;
+  animation: fade-in-right ease-in-out 1s forwards;
+}
+
+@media all and (max-width: 700px) {
+  .drip {
+      grid-column: 3 / 7;
+      grid-row: 1 / 3;
+      display: grid;
+      justify-items: right;
+      align-items: start;
+    }
+    .drip > *{
+      //margin-right: -20px;
+       width: 100% - 10;
+      height: 100%;
+    }
+    .aboutText {
+      margin: 30px;
+      grid-row: 3 / 6;
+    }
+      
+    .textGrid {
+      font-size: 18px;
+    }
+    .textGrid > div:nth-child(1) {
+      margin-top: 0;
+      grid-row: 1;
+      grid-column: 1 / 4;
+    }
+    .textGrid > div:nth-child(2) {
+      grid-row: 2;
+      grid-column: 1 / 4;
+    }
+    .textGrid > div:nth-child(3) {
+      grid-row: 3;
+      grid-column: 1 / 4;
+    }
+    
+    .about > div:nth-child(5) {
+      grid-column: 3 / 7;
+      grid-row: 8;
+      display: grid;
+      align-content: start;
+      margin-right: 30px;
+    }
+    .about > div:nth-child(6) {
+      grid-column: 3 / 7;
+      grid-row: 9;
+      display: grid;
+      align-content: start;
+      // margin-right: 20px;
+    }
+  
+    .connect {
+      grid-column: 3 / 7;
+    }
+  }
+@media all and (max-width: 375px) {
+  .drip {
+      grid-column: 2 / 7;
+      grid-row: 1 / 2;
+      display: grid;
+      justify-items: right;
+      align-items: start;
+    }
+    .drip > *{
+      margin-right: -13px;
+    }
+  
+    .textGrid{
+      font-size: 15px;
+    }
+  
+    .about > div:nth-child(5) {
+      font-size: 15px;
+    }
+  
+    .about > div:nth-child(6) {
+      grid-column: 3 / 7;
+    }
+  
+    .connect {
+      grid-column: 2 / 7;
+    }
+}

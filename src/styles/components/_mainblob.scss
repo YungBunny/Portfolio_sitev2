@@ -1,61 +1,61 @@
 ///////////// main blob of homepage
 .mainblob {
-    grid-column: 2 / 6;
-    grid-row: 3 / 8;
-    display: grid;
-  }
-  
-  .mblob {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .mblob > *{
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    z-index: 2;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000; 
-    animation: dash 3s linear forwards, FillIn 0.5s ease-in forwards;
-    animation-delay: 0s, 2.5s;
-  }
+  grid-column: 2 / 6;
+  grid-row: 3 / 8;
+  display: grid;
+}
+
+.mblob {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.mblob > *{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  z-index: 2;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000; 
+  animation: dash 3s linear forwards, FillIn 0.5s ease-in forwards;
+  animation-delay: 0s, 2.5s;
+}
 
 @media all and (max-width: 700px) {
-    .mainblob {
-        grid-row: 3 / 6;
-        display: grid;
-      }
-      .mblob {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        width: 500px;
-      }
-    
-      .mblob > * > *{
-        grid-column: 1 / 3;
-        grid-row: 1 / 3;
-        z-index: 2;
-        width: 100% - 40;
-      }
+  .mainblob {
+      grid-row: 3 / 6;
+      display: grid;
+    }
+    .mblob {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 500px;
+    }
+  
+    .mblob > * > *{
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      z-index: 2;
+      width: 100% - 40;
+    }
 }
 
 @media all and (max-width: 375px) {
-    .mainblob {
-        grid-column: 1 / 6;
-        grid-row: 2 / 4;
-        display: grid;
-      }
-      .mblob {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-      }
-      .mblob > * > *{
-        grid-column: 1 / 3;
-        grid-row: 1 / 3;
-        z-index: 2;
-        width: 100%-50;
-      }
+  .mainblob {
+      grid-column: 1 / 6;
+      grid-row: 2 / 4;
+      display: grid;
+    }
+    .mblob {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+    }
+    .mblob > * > *{
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      z-index: 2;
+      width: 100%-50;
+    }
 }

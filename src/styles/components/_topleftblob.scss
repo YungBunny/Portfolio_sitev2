@@ -1,50 +1,50 @@
 //////////// top left blob 
 .toplblob {
-    grid-column: 2;
-    grid-row: 4;
-    z-index: 2;
-    fill-opacity: 0;
-    animation: dash 15s linear forwards, FillIn 0.5s ease-in forwards;
-    animation-delay: 0s, 2.5s;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-  }
-  
+  grid-column: 2;
+  grid-row: 4;
+  z-index: 2;
+  fill-opacity: 0;
+  animation: dash 15s linear forwards, FillIn 0.5s ease-in forwards;
+  animation-delay: 0s, 2.5s;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.tlblob {
+  display: grid;
+  justify-items: right;
+}
+
+.tlblob > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+@media all and (max-width: 700px) {
   .tlblob {
-    display: grid;
-    justify-items: right;
-  }
-  
-  .tlblob > * {
-    grid-column: 1;
-    grid-row: 1;
-  }
+      grid-column: 2;
+      grid-row: 4;
+      z-index: 2;
+      display: grid;
+      justify-items: right;
+    }
+}
 
-  @media all and (max-width: 700px) {
+@media all and (max-width: 375px) {
+  .toplblob {
+      grid-column: 2;
+      grid-row: 3;
+      z-index: 2;
+    }
     .tlblob {
-        grid-column: 2;
-        grid-row: 4;
-        z-index: 2;
-        display: grid;
-        justify-items: right;
-      }
-  }
-
-  @media all and (max-width: 375px) {
-    .toplblob {
-        grid-column: 2;
-        grid-row: 3;
-        z-index: 2;
-      }
-      .tlblob {
-        grid-column: 2;
-        grid-row: 3;
-        z-index: 2;
-        display: grid;
-        justify-items: right;
-      }
-      .trblob {
-        grid-column: 3;
-        grid-row: 1 / 3;
-      }
-  }
+      grid-column: 2;
+      grid-row: 3;
+      z-index: 2;
+      display: grid;
+      justify-items: right;
+    }
+    .trblob {
+      grid-column: 3;
+      grid-row: 1 / 3;
+    }
+}

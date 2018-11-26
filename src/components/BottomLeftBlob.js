@@ -34,19 +34,19 @@ export default class BLBlob extends React.Component {
         return (
             <div className='blblob'>
                 <div id='scenebl'>
-                    <Path5bl data-depth="0.25" />
+                    <Path5bl data-depth="0.5" />
                 </div>
                 <div id='scene1bl'>
-                    <Path4bl data-depth="0.2" />
+                    <Path4bl data-depth="0.45" />
                 </div>
                 <div id='scene2bl'>
-                    <Path3bl data-depth="0.15" />
+                    <Path3bl data-depth="0.4" />
                 </div>
                 <div id='scene3bl'>
-                    <Path2bl data-depth="0.1" />
+                    <Path2bl data-depth="0.35" />
                 </div>
                 <div id='scene4bl'>
-                    <Path1bl data-depth="0.05" />
+                    <Path1bl data-depth="0.3" />
                 </div>
             </div>
         )

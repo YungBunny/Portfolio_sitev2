@@ -42,22 +42,22 @@ export default class BottomLeftBlob extends React.Component {
         return (
             <div className='mdlblob'>
                 <div id='sceneb'>
-                    <Path6b data-depth="0.15" />
+                    <Path6b data-depth="0.5" />
                 </div>
                 <div id='sceneb1'>
-                    <Path5b data-depth="0.125" />
+                    <Path5b data-depth="0.45" />
                 </div>
                 <div id='sceneb2'>
-                    <Path4b data-depth="0.1" />
+                    <Path4b data-depth="0.4" />
                 </div>
                 <div id='sceneb3'>
-                    <Path3b data-depth="0.075" />
+                    <Path3b data-depth="0.35" />
                 </div>
                 <div id='sceneb4'>
-                    <Path2b data-depth="0.05" />
+                    <Path2b data-depth="0.3" />
                 </div>
                 <div id='sceneb5'>
-                    <Path1b data-depth="0.025" />
+                    <Path1b data-depth="0.25" />
                 </div>
             </div>
         )

@@ -1,14 +1,5 @@
 import React from 'react';
 import Parallax from 'parallax-js';
-// import Path9 from '../images/mainblob/Path_9.svg';
-// import Path8 from '../images/mainblob/Path_8.svg';
-// import Path7 from '../images/mainblob/Path_7.svg';
-// import Path6 from '../images/mainblob/Path_6.svg';
-// import Path5 from '../images/mainblob/Path_5.svg';
-// import Path4 from '../images/mainblob/Path_4.svg';
-// import Path3 from '../images/mainblob/Path_3.svg';
-// import Path2 from '../images/mainblob/Path_2.svg';
-// import Path1 from '../images/mainblob/Path_1.svg';
 import Path9 from '../images/mainblob/Path_9bigger.svg';
 import Path8 from '../images/mainblob/Path_8bigger.svg';
 import Path7 from '../images/mainblob/Path_7bigger.svg';

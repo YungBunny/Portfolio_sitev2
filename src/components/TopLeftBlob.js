@@ -39,22 +39,22 @@ export default class TopLeftBlob extends React.Component {
         return (
             <div className='tlblob'>
                 <div id='scenetl'>
-                    <Path6tl data-depth="0.15" />
+                    <Path6tl data-depth="0.4" />
                 </div>
                 <div id='scene1tl'>
-                    <Path5tl data-depth="0.125" />
+                    <Path5tl data-depth="0.35" />
                 </div>
                 <div id='scene2tl'>
-                    <Path4tl data-depth="0.1" />
+                    <Path4tl data-depth="0.3" />
                 </div>
                 <div id='scene3tl'>
-                    <Path3tl data-depth="0.075" />
+                    <Path3tl data-depth="0.25" />
                 </div>
                 <div id='scene4tl'>
-                    <Path2tl data-depth="0.05" />
+                    <Path2tl data-depth="0.2" />
                 </div>
                 <div id='scene5tl'>
-                    <Path1tl data-depth="0.025" />
+                    <Path1tl data-depth="0.15" />
                 </div>
             </div>
         )
