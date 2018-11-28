@@ -32,20 +32,20 @@ export default class RightBlob extends React.Component {
     }
     render() {
         return (
-            <div className='lrblob'>
-                <div id='scener'>
+            <div className='lower-right-blob__layers'>
+                <div id='scener' className='lower-right-blob__layer'>
                     <Path5lr data-depth="0.5" />
                 </div>
-                <div id='scene1r'>
+                <div id='scene1r' className='lower-right-blob__layer'>
                     <Path4lr data-depth="0.45" />
                 </div>
-                <div id='scene2r'>
+                <div id='scene2r' className='lower-right-blob__layer'>
                     <Path3lr data-depth="0.4" />
                 </div>
-                <div id='scene3r'>
+                <div id='scene3r' className='lower-right-blob__layer'>
                     <Path2lr data-depth="0.35" />
                 </div>
-                <div id='scene4r'>
+                <div id='scene4r' className='lower-right-blob__layer'>
                     <Path1lr data-depth="0.3" />
                 </div>
             </div>

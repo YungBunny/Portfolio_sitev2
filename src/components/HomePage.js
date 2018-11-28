@@ -68,8 +68,8 @@ export default class HomePage extends React.Component {
         return (
             <div>
                 <div ref={(section) => { this.HomePage = section; }} className='homepage'>
-                    <div className='hammenu'>
-                        <div className='stickynav'>
+                    <div className='menu-icon'>
+                        <div className='menu-items'>
                             <a onClick={this.onMenuClick} id="toggle" ><span></span></a>
                             {this.state.isTop ?
                                 (<div id="menu">
@@ -92,13 +92,13 @@ export default class HomePage extends React.Component {
                     <div className='title'>
                         CHANEL FU
                     </div>
-                    <div className='mainblob'><MainBlob /></div>
-                    <div className='toplblob'><TLBlob /></div>
-                    <div className='midlblob'><MidLBlob /></div>
-                    <div className='toprblob'><TRBlob /></div>
-                    <div className='lowerrblob'><LRBlob /></div>
-                    <div className='bottomlblob'><BLBlob /></div>
-                    <div className='desc'>RESPONSIBLE WARDROBE STYLIST TURNED UI / UX DESIGNER & SOFTWARE ENGINEER</div>
+                    <div className='main-blob'><MainBlob /></div>
+                    <div className='top-left-blob'><TLBlob /></div>
+                    <div className='middle-left-blob'><MidLBlob /></div>
+                    <div className='top-right-blob'><TRBlob /></div>
+                    <div className='lower-right-blob'><LRBlob /></div>
+                    <div className='bottom-left-blob'><BLBlob /></div>
+                    <div className='description'>RESPONSIBLE WARDROBE STYLIST TURNED UI / UX DESIGNER & SOFTWARE ENGINEER</div>
                 </div>
                 <div ref={(section) => { this.PortfolioPage = section; }}>
                     <PortfolioPage />

@@ -1,34 +1,34 @@
 ///////////////// middle left blob
-.midlblob {
-    grid-column: 2;
-    grid-row: 6 / 8;
-    display: grid;
-    fill-opacity: 0;
-    animation: dash 6s linear forwards, FillIn 0.5s ease-in forwards;
-    animation-delay: 0s, 2.5s;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-  }
-  
-  .mdlblob {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .mdlblob > *{
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    z-index: 2;
-  }
+.middle-left-blob {
+  grid-column: 2;
+  grid-row: 6 / 8;
+  display: grid;
+  fill-opacity: 0;
+  animation: dash 6s linear forwards, FillIn 0.5s ease-in forwards;
+  animation-delay: 0s, 2.5s;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
 
-  @media all and (max-width: 375px) {
-    .midlblob {
-        grid-column: 2;
-        grid-row: 5;
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        z-index: 0;
-      }
+.middle-left-blob__layers {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.middle-left-blob__layer{
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  z-index: 2;
+}
+
+@media all and (max-width: 375px) {
+  .middle-left-blob {
+      grid-column: 2;
+      grid-row: 5;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      z-index: 0;
+    }
 }

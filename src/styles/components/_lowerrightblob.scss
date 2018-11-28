@@ -1,5 +1,5 @@
 ///////////// bottom right blob
-.lowerrblob {
+.lower-right-blob {
   grid-column: 5;
   grid-row: 6;
   fill-opacity: 0;
@@ -9,24 +9,24 @@
   stroke-dashoffset: 1000;
 }
 
-.lrblob {
+.lower-right-blob__layers {
  display: grid;
  justify-items: center;
  align-items: center;
 }
 
-.lrblob > *{
+.lower-right-blob__layer{
   grid-column: 1 / 1;
   grid-row: 1 / 1;
 }
 
 @media all and (max-width: 375px) {
-  .lowerrblob {
+  .lower-right-blob {
     grid-column: 5;
     grid-row: 4;
     display: grid;
   }  
-  .lrblob {
+  .lower-right-blob__layers {
       grid-column: 5;
       grid-row: 5;
     }    

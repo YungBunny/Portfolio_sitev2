@@ -12,7 +12,7 @@ const PositionLabel = (props) => {
         <div>
             {isActive == true ? (
                 <div className='imagespot'>
-                    <img className='wsimages' src={backgroundImage} />
+                    <img className='wardrobe-styling__images' src={backgroundImage} />
                 </div>
             ) : (
                     <div></div>

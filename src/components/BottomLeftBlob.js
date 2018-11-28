@@ -32,21 +32,21 @@ export default class BLBlob extends React.Component {
     }
     render() {
         return (
-            <div className='blblob'>
-                <div id='scenebl'>
-                    <Path5bl data-depth="0.5" />
+            <div className='bottom-left-blob__layers'>
+                <div id='scenebl' className='bottom-left-blob__layer'>
+                    <Path5bl data-depth="0.5" className='bottom-left-blob__svg'/>
                 </div>
-                <div id='scene1bl'>
-                    <Path4bl data-depth="0.45" />
+                <div id='scene1bl' className='bottom-left-blob__layer'>
+                    <Path4bl data-depth="0.45"  className='bottom-left-blob__svg'/>
                 </div>
-                <div id='scene2bl'>
-                    <Path3bl data-depth="0.4" />
+                <div id='scene2bl' className='bottom-left-blob__layer'>
+                    <Path3bl data-depth="0.4"  className='bottom-left-blob__svg'/>
                 </div>
-                <div id='scene3bl'>
-                    <Path2bl data-depth="0.35" />
+                <div id='scene3bl' className='bottom-left-blob__layer'>
+                    <Path2bl data-depth="0.35"  className='bottom-left-blob__svg'/>
                 </div>
-                <div id='scene4bl'>
-                    <Path1bl data-depth="0.3" />
+                <div id='scene4bl' className='bottom-left-blob__layer'>
+                    <Path1bl data-depth="0.3"  className='bottom-left-blob__svg'/>
                 </div>
             </div>
         )

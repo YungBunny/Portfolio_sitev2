@@ -37,23 +37,23 @@ export default class TopLeftBlob extends React.Component {
     }
     render() {
         return (
-            <div className='tlblob'>
-                <div id='scenetl'>
+            <div className='top-left-blob__layers'>
+                <div id='scenetl' className='top-left-blob__layer'>
                     <Path6tl data-depth="0.4" />
                 </div>
-                <div id='scene1tl'>
+                <div id='scene1tl' className='top-left-blob__layer'>
                     <Path5tl data-depth="0.35" />
                 </div>
-                <div id='scene2tl'>
+                <div id='scene2tl' className='top-left-blob__layer'>
                     <Path4tl data-depth="0.3" />
                 </div>
-                <div id='scene3tl'>
+                <div id='scene3tl' className='top-left-blob__layer'>
                     <Path3tl data-depth="0.25" />
                 </div>
-                <div id='scene4tl'>
+                <div id='scene4tl' className='top-left-blob__layer'>
                     <Path2tl data-depth="0.2" />
                 </div>
-                <div id='scene5tl'>
+                <div id='scene5tl' className='top-left-blob__layer'>
                     <Path1tl data-depth="0.15" />
                 </div>
             </div>

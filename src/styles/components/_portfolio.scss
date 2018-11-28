@@ -1,5 +1,5 @@
 /////////////// portfolio page
-.portfolio{
+.portfolio-section{
   display: grid;
   grid-template-columns: repeat(6, minmax(10px, 400px));
   grid-template-rows: repeat(9, minmax(10px, 110px));
@@ -12,106 +12,103 @@
   letter-spacing: 5px;
 }
 
-.wardrobeStyling, .midline, .uiuxDesign {
+.wardrobe-styling__title, .middle-line, .uiux-design__title {
   display: grid;
   justify-items: center;
   align-items: center;
   grid-column: 1 / -1;
 }
 
-.wardrobeStyling > *, .midline > *, .uiuxDesign > * {
+.wardrobe-styling__subsection, .middle-line__subsection, .uiux-design__subsection {
   display: grid;
   justify-items: center;
   align-items: center;
   grid-column: 1 / -1;
 }
-.wsHoverArea{
+
+.wardrobe-styling__image-area{
   display: grid;
   grid-column: 2 / 6;
   grid-row: 1 / 5;
 }
 
-.wsHoverAreaGrid {
+.wardrobe-styling__image-area-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, 400px));
   grid-template-rows: repeat(4, minmax(10px, 110px));
   justify-items: center;
 }
-.hoverRow{
+.hover-area{
   grid-row: 1 / 5;
   grid-column: 1 / 4;
 }
 
-.infront{
+.wardrobe-styling__hover-bring-to-front{
   display: grid;
   grid-row: 1;
   grid-column: 1 / 4;
   color: $aluminum;
 }
  
-.UIHoverArea{
+.uiux-design__image-area{
   display: grid;
   grid-column: 2 / 6;
   grid-row: 6 / 10;
 }
-.UIHoverAreaGrid {
+.uiux-design__image-area-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, 400px));
   grid-template-rows: repeat(4, minmax(10px, 110px));
   justify-items: center;
 }
 
-.hoverRow{
-  grid-row: 1 / 5;
-  grid-column: 1 / 4;
-}
-
-.infront2{
+.uiux-design__hover-bring-to-front{
   display: grid;
   grid-row: 1;
   color: $aluminum;
 }
  
-.portfolio > .midline > div > svg{
+.middle-line__svg{
   width: 100% - 20;
 }
 
-.portfolio > .wardrobeStyling {
+.wardrobe-styling__title {
   grid-row: 4 / 6;
 }
 
-.portfolio > .midline {
+.middle-line {
   grid-row: 5;
 }
 
-.portfolio > .uiuxDesign {
+.uiux-design__title {
   grid-row: 5 / 7;
 }
 
-.wsimages {
+// can be found in Touchable Component file, for sizing images that appear on hover
+.wardrobe-styling__images {
   width: 300px;
   margin-top: 60px;
 }
-.wsimages2 {
+.uiux-design__images {
   height: 300px;
 }
 
 @media all and (max-width: 700px) {
-  .portfolio > .midline > div > svg{
+  .middle-line__svg{
     width: 100% - 50;
   }
-  .portfolio > .uiuxDesign {
+  .uiux-design__title {
     grid-row: 5 / 7;
     margin-top: 15px;
   }
 }
 
 @media all and (max-width: 375px) {
-  .portfolio > .midline > div > svg{
+  .middle-line__svg{
     display: grid;
     width: 100% - 30;
   }
-  .portfolio{
+  .portfolio-section{
     font-size: 40px;
   }
 }

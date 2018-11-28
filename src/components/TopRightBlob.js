@@ -37,24 +37,24 @@ export default class TopLeftBlob extends React.Component {
     }
     render() {
         return (
-            <div className='trblob'>
-                <div id='scenetr'>
-                    <Path6tr data-depth="0.4" />
+            <div className='top-right-blob__layers'>
+                <div id='scenetr' className='top-right-blob__layer'>
+                    <Path6tr data-depth="0.4" className='top-right-blob__svg'/>
                 </div>
-                <div id='scene1tr'>
-                    <Path5tr data-depth="0.35" />
+                <div id='scene1tr' className='top-right-blob__layer'>
+                    <Path5tr data-depth="0.35" className='top-right-blob__svg'/>
                 </div>
-                <div id='scene2tr'>
-                    <Path4tr data-depth="0.3" />
+                <div id='scene2tr' className='top-right-blob__layer'>
+                    <Path4tr data-depth="0.3" className='top-right-blob__svg'/>
                 </div>
-                <div id='scene3tr'>
-                    <Path3tr data-depth="0.25" />
+                <div id='scene3tr' className='top-right-blob__layer'>
+                    <Path3tr data-depth="0.25" className='top-right-blob__svg'/>
                 </div>
-                <div id='scene4tr'>
-                    <Path2tr data-depth="0.2" />
+                <div id='scene4tr' className='top-right-blob__layer'>
+                    <Path2tr data-depth="0.2" className='top-right-blob__svg'/>
                 </div>
-                <div id='scene5tr'>
-                    <Path1tr data-depth="0.15" />
+                <div id='scene5tr' className='top-right-blob__layer'>
+                    <Path1tr data-depth="0.15" className='top-right-blob__svg'/>
                 </div>
             </div>
         )

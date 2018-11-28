@@ -1,5 +1,5 @@
 //////////// top left blob 
-.toplblob {
+.top-left-blob {
   grid-column: 2;
   grid-row: 4;
   z-index: 2;
@@ -10,18 +10,18 @@
   stroke-dashoffset: 1000;
 }
 
-.tlblob {
+.top-left-blob__layers {
   display: grid;
   justify-items: right;
 }
 
-.tlblob > * {
+.top-left-blob__layer {
   grid-column: 1;
   grid-row: 1;
 }
 
 @media all and (max-width: 700px) {
-  .tlblob {
+  .top-left-blob__layers {
       grid-column: 2;
       grid-row: 4;
       z-index: 2;
@@ -31,20 +31,17 @@
 }
 
 @media all and (max-width: 375px) {
-  .toplblob {
+  .top-left-blob {
       grid-column: 2;
       grid-row: 3;
       z-index: 2;
     }
-    .tlblob {
+    .top-left-blob__layers {
       grid-column: 2;
       grid-row: 3;
       z-index: 2;
       display: grid;
       justify-items: right;
     }
-    .trblob {
-      grid-column: 3;
-      grid-row: 1 / 3;
-    }
+
 }

@@ -6,12 +6,12 @@
   overflow: hidden;
 }
 ////////////hamburger menu
-.hammenu {
-  grid-column: 6;
-  grid-row: 2;
-  display: grid;
-  justify-items: left;
+.menu-icon {
+  grid-column: 5;
+  grid-row: 3;
   z-index: 3;
+  margin-top: 15px;
+  margin-left: 140px;
   // animation: fade-in-bottom ease 4s forwards;
   // position: fixed;
 }
@@ -30,7 +30,7 @@
 }
 
 ////// homepage description
-.desc {
+.description {
   grid-column: 5;
   grid-row: 7;
   font-family: 'Josefin Sans', sans-serif;
@@ -40,24 +40,30 @@
   letter-spacing: 2px;
 }
 
+@media all and (max-width: 1200px) {
+  .menu-icon {
+    margin-left: 20px;
+  }
+}
+
 @media all and (max-width: 700px) {
-  .hammenu {
-    grid-column: 5;
-    grid-row: 2;
+  .menu-icon {
+    grid-column: 4;
+    grid-row: 3;
     display: grid;
     justify-items: left;
     z-index: 3;
+    margin-left: 20px;
   }
+  
   .title {
     font-size: 55px;
   }
-  .desc {
+
+  .description {
     grid-column: 4 / 6;
     grid-row: 6;
     font-size: 15px;
-  }
-  .desc > * {
-    width: 100%;
   }
 }
 
@@ -75,26 +81,21 @@
     margin-left: 15px;
     font-size: 50px;
   }
-  .title > *{
-    width: 100% - 30;
-  }
-  .hammenu {
+
+  .menu-icon {
     grid-column: 4;
     grid-row: 2;
     display: grid;
     justify-items: left;
     z-index: 3;
   }
-  .desc {
+
+  .description {
     grid-column: 4 / 6;
     grid-row: 5;
     font-size: 12px;
     // animation: fade-in-bottom ease 4s forwards;
   }
-  .desc > * {
-    width: 100%;
-  }
-
 }
 
 @keyframes dash {

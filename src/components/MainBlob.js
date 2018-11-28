@@ -17,7 +17,6 @@ export default class MainBlob extends React.Component {
     }
 
     componentDidMount() {
-        console.log('blob');
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene, {
             relativeInput: true
@@ -58,33 +57,33 @@ export default class MainBlob extends React.Component {
 
     render() {
         return (
-            <div className='mblob'>
-                <div id='scene'>
-                    <Path9 data-depth="0.6" />
+            <div className='main-blob__layers'>
+                <div id='scene' className='main-blob__layer'>
+                    <Path9 data-depth="0.6"  className='main-blob__svg'/>
                 </div>
-                <div id='scene1'>
-                    <Path8 data-depth="0.55" />
+                <div id='scene1' className='main-blob__layer'>
+                    <Path8 data-depth="0.55"  className='main-blob__svg'/>
                 </div>
-                <div id='scene2'>
-                    <Path7 data-depth="0.5" />
+                <div id='scene2' className='main-blob__layer'>
+                    <Path7 data-depth="0.5"  className='main-blob__svg'/>
                 </div>
-                <div id='scene3'>
-                    <Path6 data-depth="0.45" />
+                <div id='scene3' className='main-blob__layer'>
+                    <Path6 data-depth="0.45"  className='main-blob__svg'/>
                 </div>
-                <div id='scene4'>
-                    <Path5 data-depth="0.4" />
+                <div id='scene4' className='main-blob__layer'>
+                    <Path5 data-depth="0.4"  className='main-blob__svg'/>
                 </div>
-                <div id='scene5'>
-                    <Path4 data-depth="0.35" />
+                <div id='scene5' className='main-blob__layer'>
+                    <Path4 data-depth="0.35"  className='main-blob__svg'/>
                 </div>
-                <div id='scene6'>
-                    <Path3 data-depth="0.3" />
+                <div id='scene6' className='main-blob__layer'>
+                    <Path3 data-depth="0.3"  className='main-blob__svg'/>
                 </div>
-                <div id='scene7'>
-                    <Path2 data-depth="0.25" />
+                <div id='scene7' className='main-blob__layer'>
+                    <Path2 data-depth="0.25"  className='main-blob__svg'/>
                 </div>
-                <div id='scene8'>
-                    <Path1 data-depth="0.2" />
+                <div id='scene8' className='main-blob__layer'>
+                    <Path1 data-depth="0.2"  className='main-blob__svg'/>
                 </div>
             </div>
         )

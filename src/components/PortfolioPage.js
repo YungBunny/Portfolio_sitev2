@@ -4,7 +4,7 @@ import PositionLabel from './TouchableComponent';
 import PositionLabel2 from './TouchableComponent2';
 import ReactCursorPosition, { INTERACTIONS } from 'react-cursor-position';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Path11 from '../images/portfolio/Path11.svg';
+import MiddleLine from '../images/portfolio/middle-line.svg';
 import Image1 from '../images/styling_portfolio/Dreamingless-12-copy-2-compressor.jpg';
 import Image2 from '../images/styling_portfolio/Dreamingless-16-copy-compressor.jpg';
 import Image3 from '../images/styling_portfolio/JUNE14_2-copy-compressor.jpg';
@@ -152,47 +152,47 @@ export default class PortfolioPage extends React.Component {
     render() {
 
         return (
-            <div className='portfolio'>
-                <div className='wardrobeStyling'>
-                    <div>
+            <div className='portfolio-section'>
+                <div className='wardrobe-styling__title'>
+                    <div className='wardrobe-styling__subsection'>
                         <ScrollAnimation animateIn='agent-1'>
                             WARDROBE STYLING
-                </ScrollAnimation>
+                        </ScrollAnimation>
                     </div>
                 </div>
-                <div className='wsHoverArea'>
-                    <div className='wsHoverAreaGrid'>
-                        <div className='hoverRow'>
+                <div className='wardrobe-styling__image-area'>
+                    <div className='wardrobe-styling__image-area-grid'>
+                        <div className='hover-area'>
                             <ReactCursorPosition onPositionChanged={this.testin.bind(this)}
                                 activationInteractionMouse={INTERACTIONS.HOVER}
                                 hoverDelayInMs={0}
                                 hoverOffDelayInMs={0}>
                                 <PositionLabel backgroundImage={this.state.backgroundImage} />
-                                <div className='infront'>this should show the wardrobe styling</div>
+                                <div className='wardrobe-styling__hover-bring-to-front'>this should show the wardrobe styling</div>
                             </ReactCursorPosition>
                         </div>
                     </div>
                 </div>
-                <div className='midline'>
-                    <ScrollAnimation animateIn='agent-2'>
-                        <Path11 />
+                <div className='middle-line'>
+                    <ScrollAnimation animateIn='agent-2' className='middle-line__subsection'>
+                        <MiddleLine className='middle-line__svg'/>
                     </ScrollAnimation>
                 </div>
-                <div className='uiuxDesign'>
-                    <div>
+                <div className='uiux-design__title'>
+                    <div className='uiux-design__subsection'>
                         <ScrollAnimation animateIn='agent-3'>
                             UI / UX & DEVELOPING
-                </ScrollAnimation>
+                        </ScrollAnimation>
                     </div>
                 </div>
-                <div className='UIHoverArea'>
-                    <div className='UIHoverAreaGrid'>
-                        <div className='hoverRow'>
+                <div className='uiux-design__image-area'>
+                    <div className='uiux-design__image-area-grid'>
+                        <div className='hover-area'>
                             <ReactCursorPosition onPositionChanged={this.testing.bind(this)}
                                 activationInteractionMouse={INTERACTIONS.HOVER}
                                 hoverDelayInMs={0}
                                 hoverOffDelayInMs={0}>
-                                <div className='infront2'>UIUX / developing</div>
+                                <div className='uiux-design__hover-bring-to-front'>UIUX / developing</div>
                                 <PositionLabel2 backgroundShot={this.state.backgroundShot} />
 
                             </ReactCursorPosition>
@@ -203,3 +203,4 @@ export default class PortfolioPage extends React.Component {
         )
     }
 }
+
